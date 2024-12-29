@@ -1,0 +1,85 @@
+---
+const handleSubmit = (event) => {
+  event.preventDefault();
+  const formData = new FormData(event.target);
+  const formObject = Object.fromEntries(formData.entries());
+  console.log("Formulario enviado:", formObject);
+  alert("Formulario enviado con éxito");
+};
+---
+<section class="flex flex-col items-center py-16" id="contacto">
+  <h2 class="text-[50px] font-medium text-center tracking-widest uppercase mb-4 text-gray-700">Contacto</h2>
+  <p class="md:text-[22px] font-textos text-center mb-12">Ya seas profesional o aficionado, aquí encontrarás formación, <br>
+    asesoramiento y selecciones especiales que despertarán <br>
+    tus sentidos y harán inolvidable cada experiencia.
+    </p>
+  <form
+    class="w-full max-w-4xl space-y-6"
+    onsubmit={handleSubmit}
+  >
+    <!-- Fila de Nombre y Email -->
+    <div class="flex flex-col md:flex-row md:space-x-4 space-y-6 md:space-y-0">
+      <div class="flex-1">
+        <label class="block text-sm uppercase text-secondary-texto mb-2" for="name">Nombre</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          class="w-full border-b-2 border-secondary-texto focus:outline-none focus:border-gray-700 transition-colors text-gray-800 p-2"
+          required
+        />
+      </div>
+      <div class="flex-1">
+        <label class="block text-sm uppercase text-secondary-texto mb-2" for="email">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          class="w-full border-b-2 border-secondary-texto focus:outline-none focus:border-gray-700 transition-colors text-gray-800 p-2"
+          required
+        />
+      </div>
+    </div>
+
+    <!-- Número de Contacto -->
+    <div>
+      <label class="block text-sm uppercase text-secondary-texto mb-2" for="phone">Número de Contacto</label>
+      <input
+        id="phone"
+        name="phone"
+        type="tel"
+        class="w-full border-b-2 border-secondary-texto focus:outline-none focus:border-gray-700 transition-colors text-gray-800 p-2"
+        required
+      />
+    </div>
+
+    <!-- Mensaje -->
+    <div>
+      <label class="block text-sm uppercase text-secondary-texto mb-2" for="message">Mensaje</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        class="w-full border-b-2 border-secondary-texto focus:outline-none focus:border-gray-700 transition-colors text-gray-800 p-2"
+        required
+      ></textarea>
+    </div>
+
+    <!-- Botón Enviar -->
+    <div class="flex justify-center text-secondary-texto">
+      <button
+        type="submit"
+        class="px-6 py-2 text-sm font-semibold uppercase border-b-2 border-secondary-texto hover:bg-gray-100 transition-colors"
+      >
+        Enviar
+      </button>
+    </div>
+  </form>
+</section>
+
+<style>
+/* Para ajustar el botón de envío como en la imagen */
+button {
+  text-underline-offset: 4px;
+}
+</style>

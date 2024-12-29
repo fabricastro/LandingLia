@@ -1,0 +1,48 @@
+---
+import profileImage from "../assets/images/HOLASOYLIA.webp";
+import reina from "../assets/images/reina.svg";
+---
+
+<section class="bg-[#fdfdfd] py-16 px-4 lg:px-16" id="quiensoy">
+    <div
+        class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12"
+    >
+        <!-- Texto -->
+        <div class="lg:w-1/2 text-center lg:text-left item justify-center">
+            <div class="relative">
+                <img
+                    src={reina.src}
+                    class="h-[228px] absolute top-[-116px] left-0 z-0 opacity-[25%]"
+                    alt="Imagen de fondo"
+                />
+                <h2
+                    class="z-10 text-3xl text-center lg:text-[80px] tracking-widest font-medium text-primary-default mb-4 font-sathu relative"
+                >
+                    HOLA SOY LÍA
+                </h2>
+            </div>
+            <p
+                class="relative text-[28px] text-center text-primary-default mb-4 leading-[33pt] font-textos mt-24"
+            >
+                Disfrutar de experiencias creativas y dinámicas usando todos los
+                sentidos de una forma que nunca viviste y no te vas a poder
+                olvidar.
+            </p>
+        </div>
+
+        <!-- Imagen -->
+        <div class="lg:w-1/2">
+            <img
+                src={profileImage.src}
+                alt="Imagen de Lía"
+                class=" shadow-lg w-full object-cover lg:h-[600px]"
+            />
+        </div>
+    </div>
+</section>
+
+<style>
+    section {
+        background-color: #fdfdfd;
+    }
+</style>

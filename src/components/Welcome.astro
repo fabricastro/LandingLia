@@ -1,0 +1,99 @@
+---
+import logo from "../assets/images/logolia.webp";
+import background from "../assets/images/home.webp";
+---
+
+<div id="container">
+	<img
+		id="background"
+		class="absolute w-full h-[100vh] object-cover"
+		src={background.src}
+		alt="Background Image"
+		fetchpriority="high"
+	/>
+	<div class="absolute inset-0 bg-black bg-opacity-30 z-10"></div>
+	<main>
+		<nav class="absolute top-0 left-0 w-full z-50">
+			<div class="flex justify-center items-center p-4">
+				<img 
+					id="logo"
+					alt="logo"
+					src={logo.src} 
+					fetchpriority="high"
+					class="h-[83px] mt-14"
+				/>
+			</div>
+			<ul class="flex justify-center items-center gap-8 p-4 text-white lg:text-[23px] tracking-[0.1em]">
+				<li>
+					<a href="#quiensoy" class="relative group">
+						<span class="hover-text">QUIÉN SOY</span>
+					</a>
+				</li>
+				<li>
+					<a href="#quehago" class="relative group">
+						<span class="hover-text">QUÉ HAGO</span>
+					</a>
+				</li>
+				<li>
+					<a href="#ciclos" class="relative group">
+						<span class="hover-text">CICLOS</span>
+					</a>
+				</li>
+				<li>
+					<a href="#sensaciones" class="relative group">
+						<span class="hover-text">SENSACIONES</span>
+					</a>
+				</li>
+				<li>
+					<a href="#contacto" class="relative group">
+						<span class="hover-text">CONTACTO</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<section
+			id="hero"
+			class="flex flex-col items-center justify-center h-screen"
+		>
+			<div class="text-center">
+				<h1 class="text-4xl md:text-6xl font-bold text-white">
+					Lía De Bárbara
+				</h1>
+				<p class="mt-4 text-lg md:text-xl text-white max-w-2xl">
+					Explora experiencias únicas de cata y gastronomía.
+				</p>
+			</div>
+		</section>
+	</main>
+</div>
+
+<style>
+.group {
+	position: relative;
+	display: inline-block;
+	padding: 0 8px;
+	cursor: pointer;
+}
+
+.group .hover-text {
+	position: relative;
+	display: inline-block;
+	color: white;
+	transition: color 0.3s ease-in-out;
+}
+
+.group .hover-text::after {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	height: 2px;
+	width: 0;
+	background: white;
+	transition: width 0.3s ease-in-out;
+}
+
+.group:hover .hover-text::after {
+	width: 100%;
+}
+</style>

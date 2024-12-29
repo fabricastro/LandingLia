@@ -1,0 +1,48 @@
+<section class="relative w-full h-screen bg-cover bg-center overflow-hidden" style="background-image: url('/mesacopas-scaled.webp');">
+    <!-- Fondo oscuro superpuesto -->
+    <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+
+    <!-- Contenido centrado -->
+    <div class="absolute inset-0 flex flex-col items-center justify-center z-20 text-center">
+        <h2 class="text-secondary-texto text-4xl sm:text-5xl md:text-6xl font-medium tracking-widest uppercase mb-6">
+            Viví nuestra experiencia
+        </h2>
+        <p class="text-white md:text-[28px] font-textos mb-6">Activando fuerte el <em>blup dup</em> <br>
+            del corazón.</p>
+        <button id="playButton" class="focus:outline-none">
+            <img src="./play-button.png" class="h-20 sm:h-28 md:h-32" alt="Play Button" />
+        </button>
+    </div>
+
+    <!-- Contenedor del iframe de Vimeo -->
+    <div id="videoContainer" class="absolute inset-0 w-full h-full opacity-0 pointer-events-none transition-opacity duration-500">
+        <iframe
+            id="vimeoPlayer"
+            src="https://player.vimeo.com/video/1042811489?background=1&autoplay=0&muted=1&loop=1"
+            class="w-full h-full"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+<script>
+    if (typeof window !== "undefined") {
+        document.addEventListener("DOMContentLoaded", () => {
+            const playButton = document.getElementById("playButton");
+            const videoContainer = document.getElementById("videoContainer");
+            const vimeoPlayer = document.getElementById("vimeoPlayer");
+
+            playButton.addEventListener("click", () => {
+                // Mostrar el video
+                videoContainer.classList.add("opacity-100", "pointer-events-auto");
+                // Reproducir el video
+                const playerSrc = vimeoPlayer.src;
+                vimeoPlayer.src = playerSrc.replace("autoplay=0", "autoplay=1");
+                // Ocultar el botón de Play
+                playButton.style.display = "none";
+            });
+        });
+    }
+</script>
