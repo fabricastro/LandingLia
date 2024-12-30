@@ -6,7 +6,7 @@ import eventos from "../assets/images/copa.svg";
 import asesorias from "../assets/images/trigo.svg";
 import encuentros from "../assets/images/libros.svg";
 import membresia from "../assets/images/reina.svg";
-import "./slider.css";
+import "./Slider.css";
 const cards = [
   { title: "CURADURÍA", icon: curaduria, backTitle: "Detalles", description: "A través de mi metodología personalizada, te ayudo a seleccionar los vinos ideales para restaurantes, bares, eventos y particulares, además de asesorarte en el armado de cavas privada." },
   { title: "EVENTOS", icon: eventos, backTitle: "Eventos", description: "Degustaciones divertidas y sensoriales donde te invito a explorar el vino de una manera única. Un ambiente exclusivo y lleno de sorpresas, pensado para que disfrutes con todos los sentidos." },
