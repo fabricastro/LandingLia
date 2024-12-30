@@ -105,7 +105,7 @@ const ReviewSlider = () => {
       <div className="relative w-full max-w-6xl">
         {/* Botón anterior */}
         <button
-          className="absolute top-1/2 md:left-[-3rem] left-0 -translate-y-1/2 z-20 p-2"
+          className="absolute top-1/2 xl:left-[-3rem] left-0 -translate-y-1/2 z-20 p-2"
           onClick={handlePrev}
         >
           <img src="./prev-button.svg" className="md:h-[60px] h-[30px]" alt="anterior" />
@@ -146,7 +146,7 @@ const ReviewSlider = () => {
 
         {/* Botón siguiente */}
         <button
-          className="absolute top-1/2 md:right-[-3rem] right-0 -translate-y-1/2 z-20 p-2"
+          className="absolute top-1/2 xl:right-[-3rem] right-0 -translate-y-1/2 z-20 p-2"
           onClick={handleNext}
         >
           <img src="./next-button.svg" className="md:h-[60px] h-[30px]" alt="siguiente" />
