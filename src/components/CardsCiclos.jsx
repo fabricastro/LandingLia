@@ -96,35 +96,43 @@ const CardCiclos = () => {
             {/* Modal */}
             {selectedCard && (
                 <div
-                    className={`fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity duration-300 ${
-                        isVisible && !isExiting ? 'opacity-100' : 'opacity-0'
-                    }`}
+                    className={`fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity duration-300 ${isVisible && !isExiting ? 'opacity-100' : 'opacity-0'
+                        }`}
                 >
                     <div
-                        className={`p-6 shadow-lg max-w-3xl relative transform transition-transform duration-300 ${
-                            isVisible && !isExiting ? 'scale-100 opacity-100' : 'scale-90 opacity-0'
-                        }`}
+                        className={`p-4 md:p-6 shadow-lg w-full h-[90vh] md:h-auto overflow-auto max-w-xs sm:max-w-md lg:max-w-3xl relative transform transition-transform duration-300 ${isVisible && !isExiting ? 'scale-100 opacity-100' : 'scale-90 opacity-0'
+                            }`}
                         style={{ backgroundColor: selectedCard.bgColor }}
                     >
+                        {/* Botón de cerrar */}
                         <button
-                            className="absolute top-4 right-4 text-lg font-bold"
+                            className="absolute top-2 right-2 sm:top-4 sm:right-4 text-lg font-bold"
                             style={{ color: selectedCard.textColor }}
                             onClick={closeModal}>
                             &times;
                         </button>
                         <div style={{ color: selectedCard.textColor }}>
-                            <h4 className="font-semibold">{selectedCard.popupContent.header}</h4>
-                            <p className="font-textos">{selectedCard.popupContent.intro}</p>
-                            <h5 className="font-semibold">{selectedCard.popupContent.question}</h5>
+                            {/* Contenido del encabezado */}
+                            <h4 className="font-semibold text-lg sm:text-xl">{selectedCard.popupContent.header}</h4>
+                            <p className="font-textos text-sm sm:text-md">{selectedCard.popupContent.intro}</p>
+                            <h5 className="font-semibold text-lg sm:text-xl">{selectedCard.popupContent.question}</h5>
+
+                            {/* Descripción HTML */}
                             <div
-                                className="font-textos"
+                                className="font-textos text-sm sm:text-md"
                                 dangerouslySetInnerHTML={{ __html: selectedCard.popupContent.description }}
                             />
-                            <div className="grid grid-cols-2 gap-4 mt-4 font-textos">
+
+                            {/* Elementos en columnas */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 font-textos">
                                 {selectedCard.popupContent.items.map((item, index) => (
-                                    <div key={index} className="border-l-4 pl-4" style={{ borderColor: selectedCard.textColor }}>
-                                        <h4 className="text-[28px]">{item.number}</h4>
-                                        <p className="font-textos">
+                                    <div
+                                        key={index}
+                                        className="border-l-4 pl-4"
+                                        style={{ borderColor: selectedCard.textColor }}
+                                    >
+                                        <h4 className="text-lg sm:text-[28px]">{item.number}</h4>
+                                        <p className="font-textos text-sm sm:text-md">
                                             <strong>{item.title}</strong> {item.content}
                                         </p>
                                     </div>
