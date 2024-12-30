@@ -40,7 +40,7 @@ const CardCiclos = () => {
             {groupedCards.map((group, groupIndex) => (
                 <div key={groupIndex} className="w-full px-[25px]">
                     {/* Título para el grupo */}
-                    <h2 className="text-2xl text-center lg:text-[60px] tracking-widest font-medium text-secondary-default mt-24 mb-14 font-sathu">{titles[groupIndex]}</h2>
+                    <h2 className="text-4xl text-center lg:text-[60px] tracking-widest font-medium text-secondary-default mt-24 mb-14 font-sathu">{titles[groupIndex]}</h2>
                     {/* Tarjetas del grupo */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl">
                         {group.map((card) => (
@@ -97,11 +97,11 @@ const CardCiclos = () => {
             {/* Modal */}
             {selectedCard && (
                 <div
-                    className={`fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity duration-300 ${isVisible && !isExiting ? 'opacity-100' : 'opacity-0'
+                    className={`fixed inset-0 bg-black bg-opacity-50 flex items-center align-middle justify-center z-50 transition-opacity duration-300 ${isVisible && !isExiting ? 'opacity-100' : 'opacity-0'
                         }`}
                 >
                     <div
-                        className={`md:p-0 shadow-lg w-full h-[90vh] md:h-auto overflow-auto max-w-xs sm:max-w-md lg:max-w-3xl relative transform transition-transform duration-300 ${isVisible && !isExiting ? 'scale-100 opacity-100' : 'scale-90 opacity-0'
+                        className={`md:p-0 shadow-lg w-full h-[90vh] md:h-auto overflow-auto max-w-xs sm:max-w-[44rem] lg:max-w-4xl relative transform transition-transform duration-300 ${isVisible && !isExiting ? 'scale-100 opacity-100' : 'scale-90 opacity-0'
                             }`}
                         style={{ backgroundColor: selectedCard.bgColor }}
                     >
