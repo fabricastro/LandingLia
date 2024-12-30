@@ -2,12 +2,13 @@
     {
         "id": "card1",
         "title": "Para Beberte Mejor",
-        "imgSrc": "https://liadebarbara.com/wp-content/uploads/2024/12/parabebertemejor-scaled.webp",
-        "iconSrc": "https://liadebarbara.com/wp-content/uploads/2024/12/estrella1.svg",
+        "imgSrc": "./ciclos/1-PARA BEBERTE MEJOR.webp",
+        "iconSrc": "./estrella1.svg",
         "shortDescription": "<em>¡Qué info tan grande tienes! </em> dicen tus amig@s. Claro que sí, si aprendiste a degustar vinos con esta experiencia de la forma más inmersiva que hayas imaginado jamás y ¡nunca lo vas a olvidar!",
         "bgColor": "#DDBEB6",
         "textColor": "#2B4437",
         "popupContent": {
+            "img": "./ciclos/1D-min.jpg",
             "header": "PARA BEBERTE MEJOR",
             "intro": "Desde el primer vino que degustes conmigo, vas a saber identificar características clave. Dejate sorprender y animate a disfrutar con otra mirada. Vos y yo vamos a redescubrir lo que hace que cada copa sea única. ",
             "question": "¿Qué vas a llevarte?",
@@ -39,12 +40,13 @@
     {
         "id": "card2",
         "title": "VITÓMANOS CERO",
-        "imgSrc": "https://liadebarbara.com/wp-content/uploads/2024/12/bgheader-scaled.webp",
+        "imgSrc": "./ciclos/2-VITÓMANOS CERO.webp",
         "iconSrc": "https://liadebarbara.com/wp-content/uploads/2024/12/Recurso-2.svg",
         "shortDescription": "De mentira a verdad. Te revelo todos mis secretos -súper útiles- para que nadie te engañe a la hora de beber (y de paso vamos probando unos vinitos).",
         "bgColor": "#E6E1DB",
         "textColor": "#A98E6B",
         "popupContent": {
+            "img": "./ciclos/2D-min.jpg",
             "header": "VITÓMANOS CERO",
             "intro": "Un espacio para jugar, reír y descubrir lo inesperado. Vamos a disfrutar de una experiencia distendida, sin presiones y con muchos hallazgos. Vas a ver los resultados mientras degustamos juntos",
             "question": "¿Qué vas a llevarte?",
@@ -76,12 +78,13 @@
     {
         "id": "card3",
         "title": "SUPERHÉROES Y VILLANOS",
-        "imgSrc": "https://liadebarbara.com/wp-content/uploads/2024/12/parabebertemejor-scaled.webp",
+        "imgSrc": "./ciclos/3-SUPERHÉROES Y VILLANOS.webp",
         "iconSrc": "https://liadebarbara.com/wp-content/uploads/2024/12/estrella1.svg",
         "shortDescription": "Esos extremos y todo lo del medio puede pasar cuando decidís combinar comida con bebida. Estamos hablando de la magia del maridaje. Elevá tu experiencia diaria y elegí vos donde querés estar.",
         "bgColor": "#2B4437",
         "textColor": "#DBD4CC",
         "popupContent": {
+            "img": "./ciclos/3D-min.jpg",
             "header": "SUPERHÉROES Y VILLANOS",
             "intro": "Dejá que esta experiencia sea todo un viaje de descubrimiento. Vamos a disfrutar de los contrastes y los matices del vino, y a explorar todo lo que se puede elevar nuestra experiencia de comer y beber a niveles insospechados. No se trata solo de aprender, sino de vivirlo ¡y disfrutar cada minuto al máximo! ",
             "question": "¿Qué vas a llevarte?",
@@ -113,12 +116,13 @@
     {
         "id": "card4",
         "title": "REBELDE EN LA COPA",
-        "imgSrc": "https://liadebarbara.com/wp-content/uploads/2024/12/bgheader-scaled.webp",
+        "imgSrc": "./ciclos/4-REBELDE EN LA COPA.webp",
         "iconSrc": "https://liadebarbara.com/wp-content/uploads/2024/12/Recurso-2.svg",
         "shortDescription": "Como dice la canción, “Si el rebelde en mí puede tocar el rebelde en ti (...)” te aseguro que voy a ampliar tu mundo de opciones. Para vos, que te cansaste de elegir siempre lo mismo y querés ir más allá de lo tradicional descubriendo vinos que no siguen las reglas generales de la góndola. ¿Te animás a romper esquemas?",
         "bgColor": "#DCBDB5",
         "textColor": "#2B4437",
         "popupContent": {
+            "img": "./ciclos/4D-min.jpg",
             "header": "REBELDE EN LA COPA",
             "intro": "Te prometo que vas a vivir algo diferente. Dejar atrás lo predecible y permitirte romper los esquemas, descubriendo vinos que no están en los estantes de siempre. ¿Estamos para salir de la caja y desafiar lo convencional? ",
             "question": "¿Qué vas a llevarte?",
@@ -150,12 +154,13 @@
     {
         "id": "card5",
         "title": "CRIOLLAS AL PODER ",
-        "imgSrc": "https://liadebarbara.com/wp-content/uploads/2024/12/bgheader-scaled.webp",
+        "imgSrc": "./ciclos/5-CRIOLLAS AL PODER.webp",
         "iconSrc": "https://liadebarbara.com/wp-content/uploads/2024/12/Recurso-2.svg",
         "shortDescription": "De nuestras raíces al futuro, las cepas criollas están marcando el camino. Sabores auténticos y llenos de historia con vinos que celebran lo nuestro. Una revalorización que hoy es tendencia en toda Latinoamérica. ¡Sumate a esta revolución de identidad!",
         "bgColor": "#E6E1DB",
         "textColor": "#A98E6B",
         "popupContent": {
+            "img": "./ciclos/5D-min.jpg",
             "header": "CRIOLLAS AL PODER ",
             "intro": "Las cepas criollas siguen haciendo historia. Con raíces profundas en nuestra tierra, hoy se presentan como una revolución de identidad llevando nuestros sabores más auténticos hacia el futuro. Llenas de tradición, son la esencia de lo nuestro. Una tendencia que resuena en toda Latinoamérica",
             "question": "¿Qué vas a llevarte?",
@@ -187,12 +192,13 @@
     {
         "id": "card6",
         "title": "DIME DÓNDE PLANTAS Y TE DIRÉ QUÉ BEBES",
-        "imgSrc": "https://liadebarbara.com/wp-content/uploads/2024/12/bgheader-scaled.webp",
+        "imgSrc": "./ciclos/6-DIME DÓNDE PLANTAS Y TE DIRÉ QUÉ BEBES.webp",
         "iconSrc": "https://liadebarbara.com/wp-content/uploads/2024/12/Recurso-2.svg",
         "shortDescription": "Cada rincón de Argentina tiene su propio carácter. Te va a atrapar la alquimia de una misma cepa transformándose en cada valle, revelando cómo el terroir, desde las alturas hasta las llanuras, les da voz propia a los vinos. Vamos a recorrer la diversidad de nuestros suelos haciéndote sentir que estás bebiendo el paisaje.",
         "bgColor": "#2B4437",
         "textColor": "#DBD4CC",
         "popupContent": {
+            "img": "./ciclos/6D-min.jpg",
             "header": "DIME DÓNDE PLANTAS Y TE DIRÉ QUÉ BEBES",
             "intro": "En cada rincón de Argentina, el vino tiene voz propia. Cada valle, cada montaña, cada suelo tiene un relato distinto. Te invito a ser parte de esta alquimia. No importa cuánto sepas sobre vinos, vas a disfrutar y aprender de una forma que se siente natural y accesible. Vos traé tus sentidos y ganas de pasarlo lindo, que yo me ocupo del resto. ",
             "question": "¿Qué vas a llevarte?",
@@ -224,12 +230,13 @@
     {
         "id": "card7",
         "title": "ÍCONOS",
-        "imgSrc": "https://liadebarbara.com/wp-content/uploads/2024/12/bgheader-scaled.webp",
+        "imgSrc": "./ciclos/7-ÍCONOS.webp",
         "iconSrc": "https://liadebarbara.com/wp-content/uploads/2024/12/Recurso-2.svg",
         "shortDescription": "¿Te gustaría descubrir dónde nacen los más simbólicos Cabernet Sauvignon o Chardonnay del mundo? En esta experiencia vamos a explorar las cepas más emblemáticas de cada rincón del planeta con una selección de los mejores vinos que las representan. Te invito a una travesía exclusiva, con los íconos que definen la viticultura mundial.",
         "bgColor": "#DDBEB6",
         "textColor": "#2B4437",
         "popupContent": {
+            "img": "./ciclos/7D-min.jpg",
             "header": "ÍCONOS",
             "intro": "El vino tiene el poder de transportarte, y en esta experiencia vamos a recorrer los caminos que llevan a las cepas más emblemáticas del mundo. Desde los majestuosos Cabernet Sauvignon hasta los elegantes Chardonnay, te invito a descubrir por qué estos ejemplares son los que escriben las grandes historias de la viticultura.  ",
             "question": "¿Qué vas a llevarte?",
@@ -261,12 +268,13 @@
     {
         "id": "card8",
         "title": "MUNDO ",
-        "imgSrc": "https://liadebarbara.com/wp-content/uploads/2024/12/bgheader-scaled.webp",
+        "imgSrc": "./ciclos/8-MUNDO.webp",
         "iconSrc": "https://liadebarbara.com/wp-content/uploads/2024/12/Recurso-2.svg",
         "shortDescription": "Acá recorremos los terruños más célebres de la tierra revelando cómo el suelo, el clima y la historia de cada región se impregnan en los vinos que allí nacen. Una oportunidad para viajar, conocer y disfrutar de lo que cada lugar tiene para ofrecer. Abrí tu paladar al mundo.",
         "bgColor": "#E6E1DB",
         "textColor": "#A98E6B",
         "popupContent": {
+            "img": "./ciclos/8D-min.jpg",
             "header": "MUNDO ",
             "intro": "En este viaje vamos a sumergirnos en los valles vitivinícolas más famosos del planeta, explorando a fondo la riqueza de sus cepas y estilos de elaboración. ",
             "question": "¿Qué vas a llevarte?",
@@ -298,12 +306,13 @@
     {
         "id": "card9",
         "title": "SACALE CHISPAS",
-        "imgSrc": "https://liadebarbara.com/wp-content/uploads/2024/12/bgheader-scaled.webp",
+        "imgSrc": "./ciclos/9-SACALE CHISPAS.webp",
         "iconSrc": "https://liadebarbara.com/wp-content/uploads/2024/12/Recurso-2.svg",
         "shortDescription": "Vamos a darle burbujas a tu boca. Si venís, vas a descubrir y comparar vinos con chispa: desde los naturales y espontáneos PetNat, hasta los refinados Champagnes, pasando por espumosos de métodos como el Champenoise y Charmat. Una propuesta fresca y llena de energía ¡Que empiece la fiesta!",
         "bgColor": "#2B4437",
         "textColor": "#DBD4CC",
         "popupContent": {
+            "img": "./ciclos/9D-min.jpg",
             "header": "SACALE CHISPAS",
             "intro": "Es hora de enchispar tu paladar. Vamos a recorrer juntos el universo de los vinos espumosos, donde cada burbuja cuenta una historia distinta. Cada uno en su estilo tiene su propio carácter, su propio ritmo… y está listo para sorprenderte",
             "question": "¿Qué vas a llevarte?",
