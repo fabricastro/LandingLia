@@ -1,0 +1,41 @@
+.perspective {
+    perspective: 1000px;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }
+  
+  .card-front {
+    transform: rotateY(0deg);
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+  }
+  
+  .group:hover .card-front {
+    transform: rotateY(-180deg);
+  }
+  
+  .group:hover .card-back {
+    transform: rotateY(0deg);
+  }
+  
+  .group {
+    transform-style: preserve-3d;
+  }
+  
+  .aspect-square {
+    position: relative;
+  }
+  
+  .relative {
+    transform: translateZ(0);
+  }
+  
+  .transition-transform {
+    transition: transform 0.7s ease-in-out;
+  }
+  

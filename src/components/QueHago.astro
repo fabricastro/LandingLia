@@ -1,6 +1,6 @@
 ---
 import luna from '../assets/images/luna.svg';
-import Slider from './Slider.astro';
+import Slider from './Slider.jsx';
 ---
 <section class="flex flex-col items-center gap-4 py-16 px-4 lg:px-16" id="quehago">
     <img src={luna.src} class="h-[63px] flex w-full justify-center mb-6" alt="Luna" />
@@ -8,5 +8,5 @@ import Slider from './Slider.astro';
     <p class="text-center text-primary-default leading-[33pt] mb-4 font-textos font-regular text-[28px]">
         Mi corazón se acelera dentro del mundo sensorial, creativo, <br> lúdico y, por supuesto, de los vinos. ¿Sos de los míos? <br> En ese caso, vamos bien.
     </p>
-    <Slider />
+    <Slider client:load/>
 </section>

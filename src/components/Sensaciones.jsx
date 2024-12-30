@@ -34,11 +34,31 @@ const ReviewSlider = () => {
     },
   ];
 
-  const slidesToShow = 3; // Cantidad de slides visibles
+  const [slidesToShow, setSlidesToShow] = useState(3);
   const [currentIndex, setCurrentIndex] = useState(0);
   const sliderRef = useRef(null);
 
   const totalSlides = reviews.length;
+
+  // Ajusta el número de slides según el tamaño de pantalla
+  useEffect(() => {
+    const updateSlidesToShow = () => {
+      if (window.innerWidth < 768) {
+        setSlidesToShow(1);
+      } else if (window.innerWidth < 1024) {
+        setSlidesToShow(2);
+      } else {
+        setSlidesToShow(3);
+      }
+    };
+
+    window.addEventListener("resize", updateSlidesToShow);
+    updateSlidesToShow();
+
+    return () => {
+      window.removeEventListener("resize", updateSlidesToShow);
+    };
+  }, []);
 
   const moveSlider = (index) => {
     const slider = sliderRef.current;
@@ -46,36 +66,49 @@ const ReviewSlider = () => {
     slider.style.transform = `translateX(-${(index * 100) / slidesToShow}%)`;
   };
 
-  const handleNext = () => {
-    if (currentIndex < totalSlides - slidesToShow) {
-      setCurrentIndex(currentIndex + 1);
-    } else {
-      setCurrentIndex(0); // Vuelve al inicio
-    }
-  };
+  // Control automático del slider
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex < totalSlides - slidesToShow ? prevIndex + 1 : 0
+      );
+    }, 5000);
 
-  const handlePrev = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    } else {
-      setCurrentIndex(totalSlides - slidesToShow); // Va al final ajustado a lo visible
-    }
-  };
+    return () => clearInterval(interval);
+  }, [totalSlides, slidesToShow]);
 
+  // Mueve el slider cuando cambia el índice
   useEffect(() => {
     moveSlider(currentIndex);
   }, [currentIndex]);
 
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex < totalSlides - slidesToShow ? prevIndex + 1 : 0
+    );
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex > 0 ? prevIndex - 1 : totalSlides - slidesToShow
+    );
+  };
+
   return (
-    <section className="flex flex-col items-center py-24 bg-primary-default text-white" id="sensaciones">
-      <h2 className="text-[60px] font-medium text-center mb-8 tracking-widest uppercase text-secondary-texto">Sus Experiencias</h2>
+    <section
+      className="flex flex-col items-center py-24 bg-primary-default text-white"
+      id="sensaciones"
+    >
+      <h2 className="md:text-[60px] text-[35px] font-medium text-center mb-8 tracking-widest uppercase text-secondary-texto">
+        Sus Experiencias
+      </h2>
       <div className="relative w-full max-w-6xl">
         {/* Botón anterior */}
         <button
-          className="absolute top-1/2 left-[-6rem] -translate-y-1/2 z-20 p-2"
+          className="absolute top-1/2 md:left-[-3rem] left-0 -translate-y-1/2 z-20 p-2"
           onClick={handlePrev}
         >
-          <img src="./prev-button.svg" className="h-[60px]" alt="anterior" />
+          <img src="./prev-button.svg" className="md:h-[60px] h-[30px]" alt="anterior" />
         </button>
 
         {/* Contenedor del slider */}
@@ -87,14 +120,20 @@ const ReviewSlider = () => {
             {reviews.map((review, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-1/3 p-4"
+                className="flex-shrink-0 p-4"
+                style={{ width: `${100 / slidesToShow}%` }}
               >
                 <p className="italic text-[20px] mb-4 leading-relaxed text-center text-secondary-texto font-textos">
                   &quot;{review.text}&quot;
                 </p>
                 <div className="flex items-center justify-center mt-4">
                   {[...Array(review.rating)].map((_, i) => (
-                    <img src="./estrella.png" alt="estrella" className="h-4 mr-1" key={i} />
+                    <img
+                      src="./estrella.png"
+                      alt="estrella"
+                      className="h-4 mr-1"
+                      key={i}
+                    />
                   ))}
                 </div>
                 <p className="text-center mt-4 font-regular text-[20px] uppercase text-secondary-texto">
@@ -107,10 +146,10 @@ const ReviewSlider = () => {
 
         {/* Botón siguiente */}
         <button
-          className="absolute top-1/2 right-[-6rem] -translate-y-1/2 z-20 p-2"
+          className="absolute top-1/2 md:right-[-3rem] right-0 -translate-y-1/2 z-20 p-2"
           onClick={handleNext}
         >
-          <img src="./next-button.svg" className="h-[60px]" alt="siguiente" />
+          <img src="./next-button.svg" className="md:h-[60px] h-[30px]" alt="siguiente" />
         </button>
       </div>
     </section>

@@ -38,9 +38,9 @@ const CardCiclos = () => {
     return (
         <section className="flex flex-col items-center justify-center">
             {groupedCards.map((group, groupIndex) => (
-                <div key={groupIndex} className="w-full">
+                <div key={groupIndex} className="w-full px-[25px]">
                     {/* Título para el grupo */}
-                    <h2 class="text-2xl text-center lg:text-[60px] tracking-widest font-medium text-secondary-default mt-24 mb-14 font-sathu">{titles[groupIndex]}</h2>
+                    <h2 className="text-2xl text-center lg:text-[60px] tracking-widest font-medium text-secondary-default mt-24 mb-14 font-sathu">{titles[groupIndex]}</h2>
                     {/* Tarjetas del grupo */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl">
                         {group.map((card) => (
