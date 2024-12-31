@@ -1,0 +1,27 @@
+---
+import up from '../assets/images/up.svg';
+---
+
+<div class="fixed bottom-6 right-6 z-50 cursor-pointer hidden flex items-center justify-center align-middle bg-[#E5E0DA] w-[40px] h-[40px] rounded-full" id="scrollToTop">
+  <img src={up.src} class="w-[20px] mt-2" alt="Scroll to top">
+</div>
+
+<script>
+  const scrollToTopButton = document.getElementById('scrollToTop');
+  const scrollThreshold = 200; // Cambia este valor según tus necesidades
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > scrollThreshold) {
+      scrollToTopButton.classList.remove('hidden');
+    } else {
+      scrollToTopButton.classList.add('hidden');
+    }
+  });
+
+  scrollToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+</script>

@@ -9,7 +9,7 @@ import logo from "../assets/images/logo-footer.png";
             <img
                 src={logo.src}
                 alt="Lía de Bárbara - La Sommelière"
-                class="h-[140px]"
+                class="h-[140px] mb-6"
             />
         </div>
 
@@ -17,39 +17,42 @@ import logo from "../assets/images/logo-footer.png";
         <nav class="flex flex-col md:flex-row md:space-x-6 items-center mb-6">
             <a
                 href="#quiensoy"
-                class="text-sm md:text-lg uppercase tracking-wide hover:text-white transition-colors mb-2 md:mb-0"
+                class="text-sm md:text-lg uppercase text-secondary-texto tracking-wid"
                 >Quien Soy</a
             >
             <a
                 href="#quehago"
-                class="text-sm md:text-lg uppercase tracking-wide hover:text-white transition-colors mb-2 md:mb-0"
+                class="text-sm md:text-lg uppercase text-secondary-texto tracking-wide"
                 >Qué Hago</a
             >
             <a
                 href="#ciclos"
-                class="text-sm md:text-lg uppercase tracking-wide hover:text-white transition-colors mb-2 md:mb-0"
+                class="text-sm md:text-lg uppercase text-secondary-texto tracking-wide"
                 >Ciclos</a
             >
             <a
                 href="#sensaciones"
-                class="text-sm md:text-lg uppercase tracking-wide hover:text-white transition-colors mb-2 md:mb-0"
+                class="text-sm md:text-lg uppercase text-secondary-texto tracking-wide"
                 >Sensaciones</a
             >
             <a
                 href="#contacto"
-                class="text-sm md:text-lg uppercase tracking-wide hover:text-white transition-colors mb-2 md:mb-0"
+                class="text-sm md:text-lg uppercase text-secondary-texto tracking-wide"
                 >Contacto</a
             >
         </nav>
 
         <!-- Ícono de contacto -->
         <div class="flex items-center">
+            <a href="https://www.instagram.com/ahora.soy.lia/" target="_blank">
+                <img src="./ig.svg" alt="instagram" class="h-6 mr-4" />
+            </a>
             <a
                 href="mailto:ml.debarbara@gmail.com"
                 class="hover:text-white transition-colors"
             >
                 <svg
-                    class="e-font-icon-svg e-fas-envelope h-10 text-secondary-texto fill-current"
+                    class="e-font-icon-svg e-fas-envelope h-6 text-secondary-texto fill-current"
                     viewBox="0 0 512 512"
                     xmlns="http://www.w3.org/2000/svg"
                 >
@@ -58,6 +61,14 @@ import logo from "../assets/images/logo-footer.png";
                     ></path>
                 </svg>
             </a>
+            <a href="https://wa.link/cge8ju" target="_blank">
+                <img src="./wsp.svg" alt="whatsapp" class="h-6 ml-4" />
+            </a>
         </div>
     </div>
 </footer>
+<div class="bg-secondary-texto h-[50px] flex items-center justify-center">
+    <p class="text-center text-sm uppercase">
+        derechos reservados lía de bárbara ∙ 2024 ∙ diseñado por <a href="www.pandaletras.com">www.pandaletras.com</a>  ∙ desarrollado por <a href="www.technodevs.com.ar">www.technodevs.com.ar</a>
+    </p>
+</div>

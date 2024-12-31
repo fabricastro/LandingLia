@@ -3,12 +3,12 @@ import profileImage from "../assets/images/HOLASOYLIA.webp";
 import reina from "../assets/images/reina.svg";
 ---
 
-<section class="bg-[#fdfdfd] py-16 md:py-24 px-4 lg:px-16" id="quiensoy">
+<section class="bg-[#fdfdfd] py-16 md:py-24 px-4 lg:px-16 relative" id="quiensoy">
     <div
         class="max-w-[85rem] mx-auto flex flex-col lg:flex-row items-center gap-12"
     >
         <!-- Texto -->
-        <div class="lg:w-1/2 text-center lg:text-left item justify-center">
+        <div class="lg:w-1/2 lg:mt-28 text-center lg:text-left item justify-center">
             <div class="relative">
                 <img
                     src={reina.src}
@@ -22,6 +22,11 @@ import reina from "../assets/images/reina.svg";
                 </h2>
             </div>
             <p
+                class="relative text-[28px] md:text-[28px] text-center text-primary-default leading-[33pt] font-textos mt-24"
+            >
+                Vamos a compartir vinos buscando variedad de terrruños, estilos de elaboración, cepas, añadas y mil temáticas más con un mismo hilo conductor:
+            </p>
+            <p
                 class="relative text-[28px] md:text-[28px] text-center text-primary-default mb-4 leading-[33pt] font-textos mt-24"
             >
                 Disfrutar de experiencias creativas y dinámicas usando todos los
@@ -31,11 +36,11 @@ import reina from "../assets/images/reina.svg";
         </div>
 
         <!-- Imagen -->
-        <div class="lg:w-1/2">
+        <div class="lg:w-1/2 lg:absolute lg:-right-0 lg:top-20 lg:h-[full] items-end justify-center md:justify-end flex">
             <img
                 src={profileImage.src}
                 alt="Imagen de Lía"
-                class=" shadow-lg w-full object-cover lg:h-[600px]"
+                class=" shadow-lg w-[80%] object-cover lg:h-[700px]"
             />
         </div>
     </div>

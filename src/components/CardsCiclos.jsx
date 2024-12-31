@@ -6,6 +6,7 @@ const CardCiclos = () => {
     const [selectedCard, setSelectedCard] = useState(null);
     const [isVisible, setIsVisible] = useState(false);
     const [isExiting, setIsExiting] = useState(false);
+    const [isAnimating, setIsAnimating] = useState(false);
 
     const openModal = (card) => {
         setSelectedCard(card);
@@ -18,11 +19,24 @@ const CardCiclos = () => {
         setTimeout(() => {
             setIsVisible(false);
             setSelectedCard(null);
+        }, 500);
+    };
+
+    const loadMoreCards = () => {
+        setIsAnimating(true);
+        setTimeout(() => {
+            setVisibleCards(cardData.length);
+            setIsAnimating(false);
         }, 300);
     };
 
-    const loadMoreCards = () => setVisibleCards((prev) => prev + 3);
-    const showLessCards = () => setVisibleCards(3);
+    const showLessCards = () => {
+        setIsAnimating(true);
+        setTimeout(() => {
+            setVisibleCards(3);
+            setIsAnimating(false);
+        }, 300);
+    };
 
     const groupedCards = cardData.slice(0, visibleCards).reduce((result, card, index) => {
         const groupIndex = Math.floor(index / 3);
@@ -42,11 +56,13 @@ const CardCiclos = () => {
                     {/* Título para el grupo */}
                     <h2 className="text-4xl text-center lg:text-[60px] tracking-widest font-medium text-secondary-default mt-24 mb-14 font-sathu">{titles[groupIndex]}</h2>
                     {/* Tarjetas del grupo */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl">
+                    <div
+                        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl transition-opacity duration-300 ${isAnimating ? 'opacity-0 scale-90' : 'opacity-100 scale-100'}`}
+                    >
                         {group.map((card) => (
                             <div
                                 key={card.id}
-                                className="flex flex-col border border-gray-300 overflow-hidden shadow-md min-h-[750px]"
+                                className="flex flex-col border border-gray-300 overflow-hidden shadow-md min-h-[886px] transition-transform duration-300"
                                 style={{ backgroundColor: card.bgColor, color: card.textColor }}>
                                 <img src={card.imgSrc} alt={card.title} className="min-h-[280px] w-full object-cover" />
                                 <div className="p-4 flex flex-col justify-between flex-1 py-6 gap-6">
@@ -97,7 +113,7 @@ const CardCiclos = () => {
             {/* Modal */}
             {selectedCard && (
                 <div
-                    className={`fixed inset-0 bg-black bg-opacity-50 flex items-center align-middle justify-center z-50 transition-opacity duration-300 ${isVisible && !isExiting ? 'opacity-100' : 'opacity-0'
+                    className={`fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity duration-300 ${isVisible && !isExiting ? 'opacity-100' : 'opacity-0'
                         }`}
                 >
                     <div
@@ -117,7 +133,6 @@ const CardCiclos = () => {
 
                             {/* Contenido del popup */}
                             <div className="relative p-4 flex flex-col justify-between">
-                                {/* Botón de cerrar */}
                                 <button
                                     className="absolute top-2 right-2 sm:top-4 sm:right-4 text-lg font-bold"
                                     style={{ color: selectedCard.textColor }}
@@ -127,18 +142,15 @@ const CardCiclos = () => {
                                 </button>
 
                                 <div style={{ color: selectedCard.textColor }}>
-                                    {/* Contenido del encabezado */}
                                     <h4 className="font-semibold text-lg sm:text-xl">{selectedCard.popupContent.header}</h4>
                                     <p className="font-textos text-sm sm:text-md">{selectedCard.popupContent.intro}</p>
                                     <h5 className="font-semibold text-lg sm:text-xl">{selectedCard.popupContent.question}</h5>
 
-                                    {/* Descripción HTML */}
                                     <div
                                         className="font-textos text-sm sm:text-md"
                                         dangerouslySetInnerHTML={{ __html: selectedCard.popupContent.description }}
                                     />
 
-                                    {/* Elementos en columnas */}
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 font-textos">
                                         {selectedCard.popupContent.items.map((item, index) => (
                                             <div
@@ -159,7 +171,6 @@ const CardCiclos = () => {
                     </div>
                 </div>
             )}
-
         </section>
     );
 };

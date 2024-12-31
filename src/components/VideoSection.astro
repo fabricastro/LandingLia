@@ -1,25 +1,25 @@
 <section class="relative w-full h-[35vh] md:h-screen bg-cover bg-center overflow-hidden" style="background-image: url('/mesacopas-scaled.webp');">
     <!-- Fondo oscuro superpuesto -->
-    <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+    <div id="overlay" class="absolute inset-0 bg-black bg-opacity-50 z-10 transition-opacity duration-500"></div>
 
     <!-- Contenido centrado -->
     <div id="contentContainer" class="absolute inset-0 flex flex-col items-center justify-center z-20 text-center transition-opacity duration-300">
         <h2 class="text-secondary-texto text-2xl sm:text-4xl md:text-6xl font-medium tracking-widest uppercase mb-6">
             Viví nuestra experiencia
         </h2>
-        <p class="text-white text-[18px] md:text-[28px] font-textos mb-6">Activando fuerte el <em>blup dup</em> <br>
+        <p class="text-[#E5E0DA] text-[18px] md:text-[28px] font-textos mb-6">Activando fuerte el <em>blup dup</em> <br>
             del corazón.</p>
         <button id="playButton" class="focus:outline-none">
             <img src="./play-button.png" class="h-20 sm:h-28 md:h-32" alt="Play Button" />
         </button>
     </div>
 
-    <!-- Contenedor del iframe de Vimeo -->
+    <!-- Contenedor del iframe de YouTube -->
     <div id="videoContainer" class="absolute inset-0 w-full h-full opacity-0 pointer-events-none transition-opacity duration-500">
         <iframe
-            id="vimeoPlayer"
-            src="https://player.vimeo.com/video/1042811489?background=1&autoplay=0&muted=1&loop=1"
-            class="w-full h-full"
+            id="youtubePlayer"
+            src="https://www.youtube.com/embed/77AwFvTc3mE?rel=0&autoplay=0&mute=1&controls=0&modestbranding=1&loop=1&playlist=77AwFvTc3mE&showinfo=0&fs=0"
+            class="absolute inset-0 w-full h-full"
             frameborder="0"
             allow="autoplay; fullscreen"
             allowfullscreen>
@@ -27,26 +27,29 @@
     </div>
 </section>
 
-
 <script>
     if (typeof window !== "undefined") {
-    document.addEventListener("DOMContentLoaded", () => {
-        const playButton = document.getElementById("playButton");
-        const videoContainer = document.getElementById("videoContainer");
-        const vimeoPlayer = document.getElementById("vimeoPlayer");
-        const contentContainer = document.getElementById("contentContainer");
+        document.addEventListener("DOMContentLoaded", () => {
+            const playButton = document.getElementById("playButton");
+            const videoContainer = document.getElementById("videoContainer");
+            const youtubePlayer = document.getElementById("youtubePlayer");
+            const contentContainer = document.getElementById("contentContainer");
+            const overlay = document.getElementById("overlay");
 
-        playButton.addEventListener("click", () => {
-            // Mostrar el video
-            videoContainer.classList.add("opacity-100", "pointer-events-auto");
-            
-            // Reproducir el video
-            const playerSrc = vimeoPlayer.src;
-            vimeoPlayer.src = playerSrc.replace("autoplay=0", "autoplay=1");
+            playButton.addEventListener("click", () => {
+                // Mostrar el video
+                videoContainer.classList.add("opacity-100", "pointer-events-auto");
+                
+                // Reproducir el video
+                const playerSrc = youtubePlayer.src;
+                youtubePlayer.src = playerSrc.replace("autoplay=0", "autoplay=1");
 
-            // Ocultar el contenido (título y párrafo)
-            contentContainer.classList.add("opacity-0", "pointer-events-none");
+                // Ocultar el contenido (título y párrafo)
+                contentContainer.classList.add("opacity-0", "pointer-events-none");
+
+                // Eliminar la opacidad del overlay
+                overlay.classList.add("opacity-0");
+            });
         });
-    });
-}
+    }
 </script>

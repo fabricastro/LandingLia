@@ -4,7 +4,7 @@
         "title": "Para Beberte Mejor",
         "imgSrc": "./ciclos/1-PARA BEBERTE MEJOR.webp",
         "iconSrc": "./estrella1.svg",
-        "shortDescription": "<em>¡Qué info tan grande tienes! </em> dicen tus amig@s. Claro que sí, si aprendiste a degustar vinos con esta experiencia de la forma más inmersiva que hayas imaginado jamás y ¡nunca lo vas a olvidar!",
+        "shortDescription": "<em>¡Qué info tan grande tienes! </em> dicen tus amigos. Claro que sí, si aprendiste a degustar vinos con esta experiencia de la forma más inmersiva que hayas imaginado jamás y <em>¡nunca lo vas a olvidar!</em>",
         "bgColor": "#DDBEB6",
         "textColor": "#2B4437",
         "popupContent": {
@@ -42,7 +42,7 @@
         "title": "VITÓMANOS CERO",
         "imgSrc": "./ciclos/2-VITÓMANOS CERO.webp",
         "iconSrc": "./Recurso-2.svg",
-        "shortDescription": "De mentira a verdad. Te revelo todos mis secretos -súper útiles- para que nadie te engañe a la hora de beber (y de paso vamos probando unos vinitos).",
+        "shortDescription": "De mentira a verdad. Te revelo todos mis secretos <em>súper útiles</em> para que nadie te engañe a la hora de beber <em>(y de paso vamos probando unos vinitos).</em>",
         "bgColor": "#E6E1DB",
         "textColor": "#A98E6B",
         "popupContent": {
@@ -80,7 +80,7 @@
         "title": "SUPERHÉROES Y VILLANOS",
         "imgSrc": "./ciclos/3-SUPERHÉROES Y VILLANOS.webp",
         "iconSrc": "./estrella3.svg",
-        "shortDescription": "Esos extremos y todo lo del medio puede pasar cuando decidís combinar comida con bebida. Estamos hablando de la magia del maridaje. Elevá tu experiencia diaria y elegí vos donde querés estar.",
+        "shortDescription": "Esos extremos y todo lo del medio puede pasar cuando decidís combinar comida con bebida. Estamos hablando de la magia del maridaje. <em>Elevá tu experiencia diaria y elegí vos donde querés estar.</em>",
         "bgColor": "#2B4437",
         "textColor": "#DBD4CC",
         "popupContent": {
@@ -118,7 +118,7 @@
         "title": "REBELDE EN LA COPA",
         "imgSrc": "./ciclos/4-REBELDE EN LA COPA.webp",
         "iconSrc": "./estrella1.svg",
-        "shortDescription": "Como dice la canción, “Si el rebelde en mí puede tocar el rebelde en ti (...)” te aseguro que voy a ampliar tu mundo de opciones. Para vos, que te cansaste de elegir siempre lo mismo y querés ir más allá de lo tradicional descubriendo vinos que no siguen las reglas generales de la góndola. ¿Te animás a romper esquemas?",
+        "shortDescription": "Como dice la canción, <em>“Si el rebelde en mí puede tocar el rebelde en ti (...)”</em> te aseguro que voy a ampliar tu mundo de opciones. Para vos, que te cansaste de elegir siempre lo mismo y querés ir más allá de lo tradicional descubriendo vinos que no siguen las reglas generales de la góndola. ¿Te animás a romper esquemas?",
         "bgColor": "#DCBDB5",
         "textColor": "#2B4437",
         "popupContent": {
@@ -194,7 +194,7 @@
         "title": "DIME DÓNDE PLANTAS Y TE DIRÉ QUÉ BEBES",
         "imgSrc": "./ciclos/6-DIME DÓNDE PLANTAS Y TE DIRÉ QUÉ BEBES.webp",
         "iconSrc": "./estrella3.svg",
-        "shortDescription": "Cada rincón de Argentina tiene su propio carácter. Te va a atrapar la alquimia de una misma cepa transformándose en cada valle, revelando cómo el terroir, desde las alturas hasta las llanuras, les da voz propia a los vinos. Vamos a recorrer la diversidad de nuestros suelos haciéndote sentir que estás bebiendo el paisaje.",
+        "shortDescription": "Cada rincón de Argentina tiene su propio carácter. Te va a atrapar la alquimia de una misma cepa transformándose en cada valle, revelando cómo el <em>terroir</em>, desde las alturas hasta las llanuras, les da voz propia a los vinos. Vamos a recorrer la diversidad de nuestros suelos haciéndote sentir que estás bebiendo el paisaje.",
         "bgColor": "#2B4437",
         "textColor": "#DBD4CC",
         "popupContent": {
