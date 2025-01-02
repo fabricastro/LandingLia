@@ -155,13 +155,19 @@ const CardCiclos = () => {
                                         {selectedCard.popupContent.items.map((item, index) => (
                                             <div
                                                 key={index}
-                                                className="border-l-4 pl-4"
-                                                style={{ borderColor: selectedCard.textColor }}
+                                                className="flex gap-4 pl-4"
                                             >
-                                                <h4 className="text-lg sm:text-[28px]">{item.number}</h4>
-                                                <p className="font-textos text-sm sm:text-md">
-                                                    <strong>{item.title}</strong> {item.content}
-                                                </p>
+                                                <h4 className="text-lg sm:text-[28px] font-bold" style={{ color: selectedCard.textColor }}>
+                                                    {item.number}
+                                                </h4>
+                                                <div
+                                                    className="border-l-2 pl-4 flex-1"
+                                                    style={{ borderColor: selectedCard.textColor }}
+                                                >
+                                                    <p className="font-textos text-sm sm:text-md">
+                                                        <strong>{item.title}</strong> <br /> {item.content}
+                                                    </p>
+                                                </div>
                                             </div>
                                         ))}
                                     </div>
