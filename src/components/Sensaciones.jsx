@@ -99,7 +99,7 @@ const ReviewSlider = () => {
       className="flex flex-col items-center py-24 bg-primary-default text-white"
       id="sensaciones"
     >
-      <h2 className="md:text-[60px] text-[35px] font-medium text-center mb-8 tracking-widest uppercase text-secondary-texto">
+      <h2 className="md:text-[48px] text-[35px] font-medium text-center mb-8 tracking-widest uppercase text-secondary-texto">
         Sus Sensaciones
       </h2>
       <div className="relative w-full max-w-[1440px]">
@@ -123,7 +123,7 @@ const ReviewSlider = () => {
                 className="flex-shrink-0 py-6 px-16 flex flex-col justify-between align-center"
                 style={{ width: `${100 / slidesToShow}%` }}
               >
-                <p className="italic text-[20px] mb-4 leading-relaxed text-center text-secondary-texto font-textos">
+                <p className="italic text-[20px] mb-4 text-center text-secondary-texto font-textos">
                   &quot;{review.text}&quot;
                 </p>
                 <div>

@@ -62,7 +62,7 @@ const Slider = () => {
     <div className="relative w-full max-w-5xl mx-auto">
       <button
         onClick={handlePrev}
-        className="absolute top-1/2 left-[-1rem] lg:left-[-3rem] -translate-y-1/2 z-20 p-2"
+        className="absolute top-1/2 left-[-1rem] lg:left-[-3rem] xl:left-[-6rem] -translate-y-1/2 z-20 p-2 -mt-10"
       >
         <img src={prev.src} alt="Flecha izquierda" className="w-6 h-6 md:w-8 md:h-[50px] hover:scale-110 transition-transform" />
       </button>
@@ -110,12 +110,12 @@ const Slider = () => {
 
       <button
         onClick={handleNext}
-        className="absolute top-1/2 right-[-1rem] lg:right-[-3rem] -translate-y-1/2 z-20 p-2"
+        className="absolute top-1/2 right-[-1rem] lg:right-[-3rem] xl:right-[-6rem] -translate-y-1/2 z-20 p-2 -mt-10"
       >
         <img src={next.src} alt="Flecha derecha" className="w-6 h-6 md:w-8 md:h-[50px] hover:scale-110 transition-transform" />
       </button>
 
-      <div className="flex justify-center mt-4 space-x-2">
+      <div className="flex justify-center mt-20 space-x-2">
         {Array.from({ length: cards.length - slidesToShow + 1 }).map((_, index) => (
           <button
             key={index}

@@ -54,7 +54,7 @@ const CardCiclos = () => {
             {groupedCards.map((group, groupIndex) => (
                 <div key={groupIndex} className="w-full px-[25px]">
                     {/* Título para el grupo */}
-                    <h2 className="text-4xl text-center lg:text-[60px] tracking-widest font-medium text-secondary-default mt-24 mb-14 font-sathu">{titles[groupIndex]}</h2>
+                    <h2 className="text-3xl text-center lg:text-[48px] tracking-widest font-medium text-secondary-default mt-48 mb-14">{titles[groupIndex]}</h2>
                     {/* Tarjetas del grupo */}
                     <div
                         className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl transition-opacity duration-300 ${isAnimating ? 'opacity-0 scale-90' : 'opacity-100 scale-100'}`}
@@ -62,20 +62,20 @@ const CardCiclos = () => {
                         {group.map((card) => (
                             <div
                                 key={card.id}
-                                className="flex flex-col border border-gray-300 overflow-hidden shadow-md min-h-[886px] transition-transform duration-300"
+                                className="flex flex-col border border-gray-300 overflow-hidden shadow-md min-h-[786px] transition-transform duration-300"
                                 style={{ backgroundColor: card.bgColor, color: card.textColor }}>
                                 <img src={card.imgSrc} alt={card.title} className="min-h-[280px] w-full object-cover" />
-                                <div className="p-4 flex flex-col justify-between flex-1 py-6 gap-6">
+                                <div className="p-4 flex flex-col justify-between flex-1 py-6">
                                     <div className='items-center flex flex-col'>
                                         <img src={card.iconSrc} alt='estrella' className='max-h-[30px] mb-6' />
-                                        <h3 className="text-[28px] text-center uppercase tracking-widest">{card.title}</h3>
+                                        <h3 className="text-[22px] text-center uppercase tracking-widest mb-6">{card.title}</h3>
                                         <div
-                                            className="text-[20px] font-textos text-center mt-2"
+                                            className="text-[18px] font-textos text-center mt-2"
                                             dangerouslySetInnerHTML={{ __html: card.shortDescription }}
                                         />
                                     </div>
                                     <button
-                                        className="mt-4 py-2 px-4 text-[20px] font-normal underline"
+                                        className="mt-4 py-2 px-4 text-[18px] font-normal underline"
                                         style={{
                                             color: card.textColor,
                                             textUnderlineOffset: '6px',
@@ -94,15 +94,15 @@ const CardCiclos = () => {
             <div className="mt-6 flex gap-4">
                 {visibleCards < cardData.length && (
                     <button
-                        className="py-2 px-4 text-base font-normal uppercase underline text-[20px]"
+                        className="py-2 text-primary-default px-4 text-base font-normal uppercase underline text-[20px]"
                         style={{ textUnderlineOffset: '6px' }}
                         onClick={loadMoreCards}>
-                        Ver más
+                        Ver todos los ciclos
                     </button>
                 )}
                 {visibleCards > 3 && (
                     <button
-                        className="py-2 px-4 text-base font-normal uppercase underline text-[20px]"
+                        className="py-2 px-4 text-primary-default text-base font-normal uppercase underline text-[20px]"
                         style={{ textUnderlineOffset: '6px' }}
                         onClick={showLessCards}>
                         Ver menos
