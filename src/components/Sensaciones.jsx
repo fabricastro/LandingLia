@@ -120,24 +120,26 @@ const ReviewSlider = () => {
             {reviews.map((review, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 py-6 px-16"
+                className="flex-shrink-0 py-6 px-16 justify-between"
                 style={{ width: `${100 / slidesToShow}%` }}
               >
                 <p className="italic text-[20px] mb-4 leading-relaxed text-center text-secondary-texto font-textos">
                   &quot;{review.text}&quot;
                 </p>
-                <p className="text-center mt-12 font-regular text-[20px] uppercase text-secondary-texto">
-                  {review.name}
-                </p>
-                <div className="flex items-center justify-center mt-4">
-                  {[...Array(review.rating)].map((_, i) => (
-                    <img
-                      src="./estrella.png"
-                      alt="estrella"
-                      className="h-5 mr-1"
-                      key={i}
-                    />
-                  ))}
+                <div>
+                  <p className="text-center mt-12 font-regular text-[20px] uppercase text-secondary-texto">
+                    {review.name}
+                  </p>
+                  <div className="flex items-center justify-center mt-4">
+                    {[...Array(review.rating)].map((_, i) => (
+                      <img
+                        src="./estrella.png"
+                        alt="estrella"
+                        className="h-5 mr-1"
+                        key={i}
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
