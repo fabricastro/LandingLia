@@ -117,7 +117,7 @@ const CardCiclos = () => {
                         }`}
                 >
                     <div
-                        className={`md:p-0 shadow-lg w-full h-[90vh] md:h-auto overflow-auto max-w-xs sm:max-w-[44rem] lg:max-w-4xl relative transform transition-transform duration-300 ${isVisible && !isExiting ? 'scale-100 opacity-100' : 'scale-90 opacity-0'
+                        className={`md:p-0 shadow-lg w-full h-[90vh] lg:h-auto overflow-auto max-w-xs sm:max-w-[44rem] md:max-w-[4xl] lg:max-w-4xl xl:max-w-6xl relative transform transition-transform duration-300 ${isVisible && !isExiting ? 'scale-100 opacity-100' : 'scale-90 opacity-0'
                             }`}
                         style={{ backgroundColor: selectedCard.bgColor }}
                     >
@@ -143,11 +143,11 @@ const CardCiclos = () => {
 
                                 <div style={{ color: selectedCard.textColor }}>
                                     <h4 className="font-semibold text-lg sm:text-xl">{selectedCard.popupContent.header}</h4>
-                                    <p className="font-textos text-sm sm:text-md">{selectedCard.popupContent.intro}</p>
+                                    <p className="font-textos text-sm sm:text-base mb-4 italic">{selectedCard.popupContent.intro}</p>
                                     <h5 className="font-semibold text-lg sm:text-xl">{selectedCard.popupContent.question}</h5>
 
                                     <div
-                                        className="font-textos text-sm sm:text-md"
+                                        className="font-textos text-sm sm:text-base"
                                         dangerouslySetInnerHTML={{ __html: selectedCard.popupContent.description }}
                                     />
 
@@ -164,7 +164,7 @@ const CardCiclos = () => {
                                                     className="border-l-2 pl-4 flex-1"
                                                     style={{ borderColor: selectedCard.textColor }}
                                                 >
-                                                    <p className="font-textos text-sm sm:text-md">
+                                                    <p className="font-textos text-sm sm:text-base">
                                                         <strong>{item.title}</strong> <br /> {item.content}
                                                     </p>
                                                 </div>
