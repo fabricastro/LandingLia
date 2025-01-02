@@ -8,11 +8,11 @@ import encuentros from "../assets/images/libros.svg";
 import membresia from "../assets/images/reina.svg";
 import "./Slider.css";
 const cards = [
-  { title: "CURADURÍA", icon: curaduria, backTitle: "CURADURÍA", description: "Con mi metodología personalizada te asesoro en la selección de vinos para restaurantes, bares, eventos, cavas privadas y maridajes. Mi objetivo es resaltar calidad, identidad y armonía" },
-  { title: "EXPERIENCIAS", icon: eventos, backTitle: "EXPERIENCIAS", description: "Degustaciones divertidas y sensoriales donde te invito a explorar el vino de una manera única. Un ambiente exclusivo y lleno de sorpresas, pensado para que disfrutes con todos los sentidos." },
-  { title: "ASESORÍA", icon: asesorias, backTitle: "ASESORÍA", description: "Te ayudo a capacitar a tu equipo para mejorar el servicio, aumentar las ventas y entender lo esencial sobre vinos y sommellerie. Todo lo que necesitás para que tu negocio brille." },
-  { title: "ENCUENTROS", icon: encuentros, backTitle: "ENCUENTROS", description: "Sesiones interactivas para aprender, compartir y descubrir lo último sobre el mundo del vino. Abierto a todos, desde aficionados hasta profesionales, siempre con un toque divertido." },
-  { title: "MEMBRESÍA", icon: membresia, backTitle: "MEMBRESÍA", description: "Accedé a degustaciones mensuales, selecciones especiales de etiquetas, contenido exclusivo y muchos más beneficios. Ideal para los que buscan algo único en su experiencia con el vino." },
+  { title: "CURADURÍA", icon: curaduria, imageSize: "132px", backTitle: "CURADURÍA", description: "Con mi metodología personalizada te asesoro en la selección de vinos para restaurantes, bares, eventos, cavas privadas y maridajes. Mi objetivo es resaltar calidad, identidad y armonía." },
+  { title: "EXPERIENCIAS", icon: eventos, imageSize: "120px", backTitle: "EXPERIENCIAS", description: "Degustaciones divertidas y sensoriales donde te invito a explorar el vino de una manera única. Un ambiente exclusivo y lleno de sorpresas, pensado para que disfrutes con todos los sentidos." },
+  { title: "ASESORÍA", icon: asesorias, imageSize: "120px", backTitle: "ASESORÍA", description: "Te ayudo a capacitar a tu equipo para mejorar el servicio, aumentar las ventas y entender lo esencial sobre vinos y sommellerie. Todo lo que necesitás para que tu negocio brille." },
+  { title: "ENCUENTROS", icon: encuentros, imageSize: "108px", backTitle: "ENCUENTROS", description: "Sesiones interactivas para aprender, compartir y descubrir lo último sobre el mundo del vino. Abierto a todos, desde aficionados hasta profesionales, siempre con un toque divertido." },
+  { title: "MEMBRESÍA", icon: membresia, imageSize: "144px", backTitle: "MEMBRESÍA", description: "Accedé a degustaciones mensuales, selecciones especiales de etiquetas, contenido exclusivo y muchos más beneficios. Ideal para los que buscan algo único en su experiencia con el vino." },
 ];
 
 const Slider = () => {
@@ -76,12 +76,24 @@ const Slider = () => {
               style={{ width: `${100 / slidesToShow}%` }}
             >
               <div className="relative w-full aspect-square group perspective cursor-pointer">
-                <div className="card-front absolute w-full h-full bg-primary-default text-white flex flex-col items-center justify-center shadow-md backface-hidden transform transition-transform duration-700">
-                  <img className="h-[80px] sm:h-[120px] mb-6" src={card.icon.src} alt={card.title} />
-                  <h3 className="text-sm sm:text-lg font-regular tracking-widest text-secondary-default">
-                    {card.title}
-                  </h3>
+                <div className="card-front absolute w-full h-full bg-primary-default text-white flex flex-col items-center justify-center pt-8 shadow-md backface-hidden transform transition-transform duration-700">
+                  <div className="flex items-center justify-center text-center min-h-[150px]">
+                    <img
+                      className=""
+                      src={card.icon.src}
+                      alt={card.title}
+                      style={{
+                        height: card.imageSize || '80px',
+                      }}
+                    />
+                  </div>
+                  <div className="flex items-center justify-center text-center min-h-[100px]">
+                    <h3 className="text-lg sm:text-lg font-regular tracking-widest text-secondary-default">
+                      {card.title}
+                    </h3>
+                  </div>
                 </div>
+
                 <div className="card-back absolute w-full h-full bg-secondary-claro flex flex-col items-center justify-center shadow-md backface-hidden transform rotate-y-180 transition-transform duration-700 group-hover:rotate-y-0 px-4 sm:px-6">
                   <h3 className="text-sm sm:text-lg font-regular uppercase text-secondary-oscuro tracking-widest">
                     {card.backTitle}
@@ -107,16 +119,15 @@ const Slider = () => {
         {Array.from({ length: cards.length - slidesToShow + 1 }).map((_, index) => (
           <button
             key={index}
-            className={`dot w-2 h-2 md:w-3 md:h-3 rounded-full ${
-              currentIndex === index ? "bg-secondary-default" : "bg-transparent"
-            } border-secondary-default border-[1px] hover:bg-secondary-default transition-colors`}
+            className={`dot w-2 h-2 md:w-3 md:h-3 rounded-full ${currentIndex === index ? "bg-secondary-default" : "bg-transparent"
+              } border-secondary-default border-[1px] hover:bg-secondary-default transition-colors`}
             onClick={() => moveSlider(index)}
           ></button>
         ))}
       </div>
     </div>
   );
-  
+
 };
 
 
