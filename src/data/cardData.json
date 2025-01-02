@@ -12,26 +12,26 @@
             "header": "PARA BEBERTE MEJOR",
             "intro": "Desde el primer vino que degustes conmigo, vas a saber identificar características clave. Dejate sorprender y animate a disfrutar con otra mirada. Vos y yo vamos a redescubrir lo que hace que cada copa sea única. ",
             "question": "¿Qué vas a llevarte?",
-            "description": "Una guía sobre cómo “catar” con una (gran) vuelta de tuerca. Vas a irte de mi espacio con info valiosa que te va a ayudar a disfrutar mucho más de los vinos que ya te encantan y, al mismo tiempo, abrirte a descubrir nuevos sabores desde otra perspectiva, con más confianza y curiosidad. Mi objetivo es que te lleves herramientas -simples pero poderosasque te permitan conectar de un modo más personal, auténtico y significativo con lo que te gusta. Todo lo que necesites lo vas a tener en mi mesa, vos solo vení con ganas de disfrutar. <br> <b>¡BONUS GRATIS!</b> Además después te sigo acompañando con un kit digital para potenciar lo aprendido.",
+            "description": "Una guía sobre cómo “catar” con una (gran) vuelta de tuerca. Vas a irte de mi espacio con info valiosa que te va a ayudar a disfrutar mucho más de los vinos que ya te encantan y, al mismo tiempo, abrirte a descubrir nuevos sabores desde otra perspectiva, con más confianza y curiosidad. Mi objetivo es que te lleves herramientas -simples pero poderosas que te permitan conectar de un modo más personal, auténtico y significativo con lo que te gusta. Todo lo que necesites lo vas a tener en mi mesa, vos solo vení con ganas de disfrutar. <br> <b>¡BONUS GRATIS!</b> Además después te sigo acompañando con un kit digital para potenciar lo aprendido.",
             "items": [
                 {
                     "number": "1",
-                    "title": "EL ABC DE LA DEGUSTACIÓN, COMO NUNCA ANTES.",
+                    "title": "EL ABC DE LA DEGUSTACIÓN, COMO NUNCA.",
                     "content": "Lo que en un mundo clásico podría ser el ABC de la degustación, ahora lo vas a vivir de una forma inesperada. ¡Vas a sentir, sentir, sentir! Estoy segura de que, después de ésto, no vas a querer volver atrás."
                 },
                 {
                     "number": "2",
-                    "title": "PARA DISFRUTAR MÁS, SENTIR MÁS.",
+                    "title": "PARA DISFRUTAR MÁS.",
                     "content": "Te voy a dar recursos sensoriales concretos para que relaciones los sentidos con el vino de una manera completamente nueva, encontrando variantes para conectarte con los sabores y las historias que estas etiquetas tienen para contarte."
                 },
                 {
                     "number": "3",
-                    "title": "SENSACIONES QUE HABLAN",
+                    "title": "SENSACIONES QUE HABLAN.",
                     "content": "En cada detalle, en cada aroma, en cada sorbo, vas a llevarte mucho más que conocimientos. Vas a conectar con tus percepciones y con lo que hace diferente a cada opción a través de técnicas ingeniosas. "
                 },
                 {
                     "number": "4",
-                    "title": "UNA EXPERIENCIA TRANSFORMADORA",
+                    "title": "UNA EXPERIENCIA TRANSFORMADORA.",
                     "content": "Porque ésto no se trata solo de degustar: es dejarte atravesar por el vino con un espíritu más creativo, lúdico y especial."
                 }
             ]
@@ -42,15 +42,15 @@
         "title": "VITÓMANOS CERO",
         "imgSrc": "./ciclos/2-VITÓMANOS CERO.webp",
         "iconSrc": "./Recurso-2.svg",
-        "shortDescription": "De mentira a verdad. Te revelo todos mis secretos <em>súper útiles</em> para que nadie te engañe a la hora de beber <em>(y de paso vamos probando unos vinitos).</em>",
+        "shortDescription": "De mentira a verdad. Te revelo todos mis secretos <em>-súper útiles-</em> para que nadie te engañe a la hora de beber <em>(y de paso vamos probando unos vinitos).</em>",
         "bgColor": "#E6E1DB",
         "textColor": "#A98E6B",
         "popupContent": {
             "img": "./ciclos/2D-min.jpg",
             "header": "VITÓMANOS CERO",
-            "intro": "Un espacio para jugar, reír y descubrir lo inesperado. Vamos a disfrutar de una experiencia distendida, sin presiones y con muchos hallazgos. Vas a ver los resultados mientras degustamos juntos",
+            "intro": "Un espacio para jugar, reír y descubrir lo inesperado. Vamos a disfrutar de una experiencia distendida, sin presiones y con muchos hallazgos. Vas a ver los resultados mientras degustamos juntos.",
             "question": "¿Qué vas a llevarte?",
-            "description": "La posta detrás de esas frases “intocables” que venís escuchando toda la vida sobre los vinos. Compartimos un momento divertido y súper relajado. Vamos a jugar un rato, dejar de lado lo serio y disfrutar de propuestas que es posible que no conozcas. Estoy convencida de que te van a atrapar, y lo mejor de todo es que vas a aprender algo nuevo disfrutando con una perspectiva más fresca",
+            "description": "La posta detrás de esas frases “intocables” que venís escuchando toda la vida sobre los vinos. Compartimos un momento divertido y súper relajado. Vamos a jugar un rato, dejar de lado lo serio y disfrutar de propuestas que es posible que no conozcas. Estoy convencida de que te van a atrapar, y lo mejor de todo es que vas a aprender algo nuevo disfrutando con una perspectiva más fresca.",
             "items": [
                 {
                     "number": "1",
@@ -69,7 +69,7 @@
                 },
                 {
                     "number": "4",
-                    "title": "TAL VEZ NOS SORPRENDAS A TODOS",
+                    "title": "TAL VEZ NOS SORPRENDAS A TODOS.",
                     "content": "Si ya tenés clara la jugada, tal vez seas vos quien nos dé una lección con su conocimiento. ¡Éste es un espacio para que todos aprendamos!"
                 }
             ]
@@ -92,22 +92,22 @@
             "items": [
                 {
                     "number": "1",
-                    "title": "UN ESPACIO CÁLIDO Y SIN PRESIONES",
+                    "title": "UN ESPACIO CÁLIDO Y SIN PRESIONES.",
                     "content": ". La idea es que pasemos el tiempo en un ambiente súper cálido -mi espacio íntimo- donde podamos disfrutar de los vinos de una manera relajada. Nada de formalidades, solo buenos momentos y una dosis de humor mientras aprendemos."
                 },
                 {
                     "number": "2",
-                    "title": "JUSTICIEROS DESBARATANDO MITOS",
+                    "title": "JUSTICIEROS DESBARATANDO MITOS.",
                     "content": "Nos vamos a convertir en un equipo de justicieros desbaratando bandas de mentirosos del vino. ¿Por cuánto tiempo estuviste creyendo cosas que no son tan ciertas? Recuperemos la verdad de la milanesa y elijamos a consciencia"
                 },
                 {
                     "number": "3",
-                    "title": "NUEVAS PERSPECTIVAS",
+                    "title": "NUEVAS PERSPECTIVAS.",
                     "content": "Vas a descubrir sabores diferentes, aromas intrigantes e historias particulares saliendo de tu zona de confort. Ahora con los mitos revelados, cada botella va a hablarte de una forma distinta y a ayudarte a conectar con lo que la hace única"
                 },
                 {
                     "number": "4",
-                    "title": "TAL VEZ NOS SORPRENDAS A TODOS",
+                    "title": "TAL VEZ NOS SORPRENDAS A TODOS.",
                     "content": "Si ya tenés clara la jugada, tal vez seas vos quien nos dé una lección con su conocimiento. ¡Éste es un espacio para que todos aprendamos!"
                 }
             ]
@@ -118,7 +118,7 @@
         "title": "REBELDE EN LA COPA",
         "imgSrc": "./ciclos/4-REBELDE EN LA COPA.webp",
         "iconSrc": "./estrella1.svg",
-        "shortDescription": "Como dice la canción, <em>“Si el rebelde en mí puede tocar el rebelde en ti (...)”</em> te aseguro que voy a ampliar tu mundo de opciones. Para vos, que te cansaste de elegir siempre lo mismo y querés ir más allá de lo tradicional descubriendo vinos que no siguen las reglas generales de la góndola. ¿Te animás a romper esquemas?",
+        "shortDescription": "Como dice la canción, <em>“Si el rebelde en mí puede tocar el rebelde en ti (...)” </em> te aseguro que voy a ampliar tu mundo de opciones. Para vos, que te cansaste de elegir siempre lo mismo y querés ir más allá de lo tradicional descubriendo vinos que no siguen las reglas generales de la góndola. ¿Te animás a romper esquemas?",
         "bgColor": "#DCBDB5",
         "textColor": "#2B4437",
         "popupContent": {
@@ -131,11 +131,11 @@
                 {
                     "number": "1",
                     "title": "MÁS ALLÁ DEL TINTO/BLANCO.",
-                    "content": "Lo que vamos a probar no sigue las pautas de lo común. Vas a descubrir opciones que desafían tu paladar, estilos y expectativas. Desde la primera copa vas a sentir que lo que conocías era solo la punta del iceberg. "
+                    "content": "Lo que vamos a probar no sigue las pautas de lo común. Vas a descubrir opciones que desafían tu paladar, estilos y expectativas. Desde la primera copa vas a sentir que lo que conocías era solo la punta del <em>iceberg.</em> "
                 },
                 {
                     "number": "2",
-                    "title": "ROMPER LA RUTINA",
+                    "title": "ROMPER LA RUTINA.",
                     "content": "Esta experiencia es para los que se cansaron de lo mismo. Acá no hay espacio para lo predecible, solo para lo experimental. Cada etiqueta, cada sabor, es una invitación a descubrir algo único, fuera de lo tradicional. Vas a aprender a ver el vino como una aventura, un desafío para los sentidos."
                 },
                 {
@@ -162,7 +162,7 @@
         "popupContent": {
             "img": "./ciclos/5D-min.jpg",
             "header": "CRIOLLAS AL PODER ",
-            "intro": "Las cepas criollas siguen haciendo historia. Con raíces profundas en nuestra tierra, hoy se presentan como una revolución de identidad llevando nuestros sabores más auténticos hacia el futuro. Llenas de tradición, son la esencia de lo nuestro. Una tendencia que resuena en toda Latinoamérica",
+            "intro": "Las cepas criollas siguen haciendo historia. Con raíces profundas en nuestra tierra, hoy se presentan como una revolución de identidad llevando nuestros sabores más auténticos hacia el futuro. Llenas de tradición, son la esencia de lo nuestro. Una tendencia que resuena en toda Latinoamérica.",
             "question": "¿Qué vas a llevarte?",
             "description": "Una inmersión en nuestra cultura vitivinícola. Juntos vamos a conocer cuáles son y a explorar el poder de las cepas criollas, esos sabores que cuentan historias de la tierra, el clima y la gente que las trabajó. Cada sorbo será una invitación a conectarse con el origen y la evolución de estas variedades, descubriendo su carácter único. Convertite en parte de ese grupo selecto que valora la movida local. <br> <b>¡BONUS GRATIS! De regalo te llevás una infografía digital de la familia de las variedades nativas.</b> ",
             "items": [
@@ -173,7 +173,7 @@
                 },
                 {
                     "number": "2",
-                    "title": "VIVIRLO DESDE EL CORAZÓN",
+                    "title": "VIVIRLO DESDE EL CORAZÓN.",
                     "content": "Aprenderás sobre las variedades autóctonas sintiendo cómo se conecta el presente con el pasado en cada etiqueta. Una experiencia sensorial que te va a llevar a un nuevo nivel de apreciación."
                 },
                 {
@@ -183,7 +183,7 @@
                 },
                 {
                     "number": "4",
-                    "title": "NUESTRA ESENCIA",
+                    "title": "NUESTRA ESENCIA.",
                     "content": "Un encuentro con lo que nos representa. Acá no se trata solo de probar, sino de sentir, de vibrar con el presente y el futuro de nuestra cultura vitivinícola. Vas a llevarte info que te ayudará a entender y disfrutar de las cepas criollas sin precedentes, siempre con la curiosidad abierta a nuevas posibilidades."
                 }
             ]
@@ -206,7 +206,7 @@
             "items": [
                 {
                     "number": "1",
-                    "title": "LA GEOGRAFÍA DETRÁS DEL VINO",
+                    "title": "LA GEOGRAFÍA DETRÁS DEL VINO.",
                     "content": "Vas a entender cómo las diferencias de suelo, clima y altitud impactan en los aromas y sabores de cada vino. No es solo aprender, sino sentir la conexión con el lugar donde nace cada botella."
                 },
                 {
@@ -216,12 +216,12 @@
                 },
                 {
                     "number": "3",
-                    "title": "UN VIAJE SENSORIAL",
+                    "title": "UN VIAJE SENSORIAL.",
                     "content": "Vamos a sumergirnos en la tierra. Vas a conectar con los vinos de una manera más profunda, con los sentidos y el corazón. Cada trago será un eco de la región que lo vio nacer."
                 },
                 {
                     "number": "4",
-                    "title": "BEBEMOS EL PAISAJE",
+                    "title": "BEBEMOS EL PAISAJE.",
                     "content": "Si cerrás los ojos y probás un sorbo, vas a poder vivir un encuentro con ese paisaje argentino. Un viaje en el que el vino deja de ser solo una bebida y se convierte en una experiencia única, personal y auténtica."
                 }
             ]
@@ -244,22 +244,22 @@
             "items": [
                 {
                     "number": "1",
-                    "title": "INVESTIGANDO LAS RAÍCES DEL VINO ICÓNICO. ",
+                    "title": "INVESTIGANDO LAS RAÍCES DEL VINO ICÓNICO.",
                     "content": "Vas a sumergirte en las historias y características que hicieron de estas variedades los grandes protagonistas del mundo del vino. Cada detalle, desde el origen hasta la copa, te va a revelar el motivo de su grandeza."
                 },
                 {
                     "number": "2",
-                    "title": "UN PASAPORTE SENSORIAL. ",
+                    "title": "UN PASAPORTE SENSORIAL.",
                     "content": "Sin movernos de mi mesa vamos a viajar a diferentes rincones del mundo, entendiendo por qué estos varietales, provenientes de esos terruños tan particulares, son leyendas vivas."
                 },
                 {
                     "number": "3",
-                    "title": "UN ENCUENTRO CON LA CIMA DE LA EXCELENCIA. ",
+                    "title": "UN ENCUENTRO CON LA CIMA DE LA EXCELENCIA.",
                     "content": "Nos vamos a concentrar en los mejores exponentes del Viejo y del Nuevo Mundo. Desde la tradición de Europa hasta la innovación de territorios como California, Australia y Sudáfrica, vas a descubrir cómo estas regiones han elevado sus vinos al estatus de íconos."
                 },
                 {
                     "number": "4",
-                    "title": "AMPLIÁ TU HORIZONTE. ",
+                    "title": "AMPLIÁ TU HORIZONTE.",
                     "content": "Te voy a mostrar sabores y perfiles que se alejan de lo que conocemos en Argentina. Vas a notar contrastes sorprendentes en sus expresiones, lo que te permitirá valorar de una manera completamente nueva la diversidad de estilos que existen en el mundo."
                 }
             ]
@@ -278,7 +278,7 @@
             "header": "MUNDO ",
             "intro": "En este viaje vamos a sumergirnos en los valles vitivinícolas más famosos del planeta, explorando a fondo la riqueza de sus cepas y estilos de elaboración. ",
             "question": "¿Qué vas a llevarte?",
-            "description": "La experiencia exclusiva de probar algo que no tenemos al alcance de la mano todos los días, y la capacidad de apreciarlo y disfrutarlo mucho. Conocer la personalidad única de un valle fuera de nuestro país, desde su terroir hasta las historias que le dieron vida a lo que estamos tomando. <br> <b>¡BONUS GRATIS! De regalo te llevás un kit de La Sommelière para seguir disfrutando en casa. </b>",
+            "description": "La experiencia exclusiva de probar algo que no tenemos al alcance de la mano todos los días, y la capacidad de apreciarlo y disfrutarlo mucho. Conocer la personalidad única de un valle fuera de nuestro país, desde su <em>terroir</em> hasta las historias que le dieron vida a lo que estamos tomando. <br> <b>¡BONUS GRATIS! De regalo te llevás un kit de La Sommelière para seguir disfrutando en casa. </b>",
             "items": [
                 {
                     "number": "1",
@@ -292,7 +292,7 @@
                 },
                 {
                     "number": "3",
-                    "title": "LA IDENTIDAD",
+                    "title": "LA IDENTIDAD.",
                     "content": "Rescatamos lo más emblemático de cada valle, de a una degustación por vez. Vas a aprender a identificar lo que distingue a cada región, y cómo esas características se reflejan en la copa. Sentirás que no solo saboreaste un vino, sino que viajaste a su lugar de origen, entendiendo su esencia."
                 },
                 {
@@ -321,21 +321,21 @@
                 {
                     "number": "1",
                     "title": "UN SALTO DE FRESCURA.",
-                    "content": "Vas a aprender sobre los diferentes estilos de espumosos de una forma que te va a hacer verlos con más entusiasmo. Y lo mejor es que vas a aprender, con práctica in-situ, cómo cada uno es distinto al otro."
+                    "content": "Vas a aprender sobre los diferentes estilos de espumosos de una forma que te va a hacer verlos con más entusiasmo. Y lo mejor es que vas a aprender, con práctica <em>in-situ</em>, cómo cada uno es distinto al otro."
                 },
                 {
                     "number": "2",
-                    "title": "VIVÍ EN UNA BURBUJA. ",
+                    "title": "VIVÍ EN UNA BURBUJA.",
                     "content": "No solo vas a disfrutar más de los vinos con efervescencia, sino que vas a descubrir cómo se forma cada tipo de burbuja según el método de vinificación. Yo te lo cuento cortito, pero tu paladar lo va a saborear un rato largo."
                 },
                 {
                     "number": "3",
-                    "title": "EXPLOTA EXPLOTA EXPLÓ. ",
+                    "title": "EXPLOTA EXPLOTA EXPLÓ.",
                     "content": "Vamos a explorar las distintas texturas, desde las más finas y delicadas hasta las más robustas, y descubrir cómo el nivel de azúcar influye en la sensación de este estilo de vinos creando una experiencia diferente en cada elección."
                 },
                 {
                     "number": "4",
-                    "title": "A VIBRAR, MI AMOR. ",
+                    "title": "A VIBRAR, MI AMOR.",
                     "content": "En un festín de burbujas que te va a dejar con ganas de más, vas a vivir una experiencia diferente, llena de energía y creatividad. Vas a comprender por qué el espumoso no es solo para ocasiones especiales o celebraciones. Te daré ideas para adaptarlo a muchos momentos, platos y estados de ánimo. Vas a aprender a disfrutarlo siempre, como un vino más dentro de tu día a día."
                 }
             ]

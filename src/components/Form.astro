@@ -7,36 +7,44 @@ const handleSubmit = (event) => {
   alert("Formulario enviado con éxito");
 };
 ---
+
 <section class="flex flex-col items-center py-16" id="contacto">
-  <h2 class="text-4xl font-medium text-center tracking-widest uppercase mb-4 text-gray-700">Contacto</h2>
-  <p class="text-[18px] md:text-[28px] font-textos text-center mb-12 mx-10 md:mx-20 lg:mx-[400px] 2xl:mx-[500px]">Ya seas profesional o aficionado, aquí encontrarás información,
-    asesoramiento y selecciones especiales que despertarán
-    tus sentidos y harán inolvidable cada experiencia.
-    </p>
+  <h2
+    class="text-4xl font-medium text-center tracking-widest uppercase mb-4 text-gray-700"
+  >
+    Contacto
+  </h2>
+  <p
+    class="text-[18px] md:text-[28px] font-textos text-center mb-12 mx-10 md:mx-20 lg:mx-[400px] 2xl:mx-[500px]"
+  >
+    Ya seas profesional o aficionado, aquí encontrarás información,
+    asesoramiento y selecciones especiales que despertarán tus sentidos y harán
+    inolvidable cada experiencia.
+  </p>
   <form
     class="w-full max-w-4xl px-8 space-y-6"
-    action="https://getform.io/f/bkkkzxjb" 
-     method="POST"
+    action="https://getform.io/f/bkkkzxjb"
+    method="POST"
   >
     <!-- Fila de Nombre y Email -->
     <div class="flex flex-col md:flex-row md:space-x-4 space-y-6 md:space-y-0">
       <div class="flex-1">
-        <label class="block text-sm uppercase text-secondary-texto mb-2" for="name">Nombre</label>
         <input
+          placeholder="Nombre"
           id="name"
           name="name"
           type="text"
-          class="w-full border-b-2 border-secondary-texto focus:outline-none focus:border-gray-700 transition-colors text-gray-800 p-2"
+          class="w-full border-b-2 border-secondary-texto uppercase text-secondary-texto placeholder:text-secondary-texto focus:outline-none focus:border-gray-700 transition-colors p-2"
           required
         />
       </div>
       <div class="flex-1">
-        <label class="block text-sm uppercase text-secondary-texto mb-2" for="email">Email</label>
         <input
+          placeholder="Email"
           id="email"
           name="email"
           type="email"
-          class="w-full border-b-2 border-secondary-texto focus:outline-none focus:border-gray-700 transition-colors text-gray-800 p-2"
+          class="w-full border-b-2 border-secondary-texto uppercase text-secondary-texto placeholder:text-secondary-texto focus:outline-none focus:border-gray-700 transition-colors p-2"
           required
         />
       </div>
@@ -44,26 +52,25 @@ const handleSubmit = (event) => {
 
     <!-- Número de Contacto -->
     <div>
-      <label class="block text-sm uppercase text-secondary-texto mb-2" for="phone">Número de Contacto</label>
       <input
+        placeholder="Número de Contacto"
         id="phone"
         name="phone"
         type="tel"
-        class="w-full border-b-2 border-secondary-texto focus:outline-none focus:border-gray-700 transition-colors text-gray-800 p-2"
+        class="w-full border-b-2 border-secondary-texto uppercase text-secondary-texto placeholder:text-secondary-texto focus:outline-none focus:border-gray-700 transition-colors p-2"
         required
       />
     </div>
 
     <!-- Mensaje -->
     <div>
-      <label class="block text-sm uppercase text-secondary-texto mb-2" for="message">Mensaje</label>
       <textarea
+        placeholder="Mensaje"
         id="message"
         name="message"
         rows="4"
-        class="w-full border-b-2 border-secondary-texto focus:outline-none focus:border-gray-700 transition-colors text-gray-800 p-2"
-        required
-      ></textarea>
+        class="w-full border-b-2 border-secondary-texto uppercase text-secondary-texto placeholder:text-secondary-texto focus:outline-none focus:border-gray-700 transition-colors p-2"
+        required></textarea>
     </div>
 
     <!-- Botón Enviar -->
@@ -79,8 +86,8 @@ const handleSubmit = (event) => {
 </section>
 
 <style>
-/* Para ajustar el botón de envío como en la imagen */
-button {
-  text-underline-offset: 4px;
-}
+  /* Para ajustar el botón de envío como en la imagen */
+  button {
+    text-underline-offset: 4px;
+  }
 </style>
