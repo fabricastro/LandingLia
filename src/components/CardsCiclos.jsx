@@ -94,7 +94,7 @@ const CardCiclos = () => {
             <div className="mt-6 flex gap-4">
                 {visibleCards < cardData.length && (
                     <button
-                        className="py-2 px-4 text-md font-normal uppercase underline text-[20px]"
+                        className="py-2 px-4 text-base font-normal uppercase underline text-[20px]"
                         style={{ textUnderlineOffset: '6px' }}
                         onClick={loadMoreCards}>
                         Ver más
@@ -102,7 +102,7 @@ const CardCiclos = () => {
                 )}
                 {visibleCards > 3 && (
                     <button
-                        className="py-2 px-4 text-md font-normal uppercase underline text-[20px]"
+                        className="py-2 px-4 text-base font-normal uppercase underline text-[20px]"
                         style={{ textUnderlineOffset: '6px' }}
                         onClick={showLessCards}>
                         Ver menos

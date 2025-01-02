@@ -72,7 +72,7 @@ const Slider = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="flex-shrink-0 p-16 md:p-4"
+              className="flex-shrink-0 p-10 md:p-4"
               style={{ width: `${100 / slidesToShow}%` }}
             >
               <div className="relative w-full aspect-square group perspective cursor-pointer">
