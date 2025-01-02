@@ -115,12 +115,12 @@ const ReviewSlider = () => {
         <div className="overflow-hidden">
           <div
             ref={sliderRef}
-            className="slider-track flex transition-transform"
+            className="slider-track flex transition-transform justify-between"
           >
             {reviews.map((review, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 py-6 px-16 justify-between"
+                className="flex-shrink-0 py-6 px-16 flex flex-col justify-between align-center"
                 style={{ width: `${100 / slidesToShow}%` }}
               >
                 <p className="italic text-[20px] mb-4 leading-relaxed text-center text-secondary-texto font-textos">
