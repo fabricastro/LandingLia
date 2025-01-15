@@ -132,7 +132,7 @@ const CardCiclos = () => {
                             </div>
 
                             {/* Contenido del popup */}
-                            <div className="relative p-4 flex flex-col justify-between">
+                            <div className="relative p-4 flex flex-col justify-center">
                                 <button
                                     className="absolute top-2 right-2 sm:top-4 sm:right-4 text-lg font-bold"
                                     style={{ color: selectedCard.textColor }}
@@ -142,10 +142,10 @@ const CardCiclos = () => {
                                 </button>
 
                                 <div style={{ color: selectedCard.textColor }}>
-                                    <h4 className="font-semibold text-lg sm:text-xl">{selectedCard.popupContent.header}</h4>
-                                    <p className="font-textos text-sm sm:text-base mb-4 italic">{selectedCard.popupContent.intro}</p>
-                                    <h5 className="font-semibold text-lg sm:text-xl">{selectedCard.popupContent.question}</h5>
+                                    <h4 className="font-semibold text-lg sm:text-xl tracking-widest">{selectedCard.popupContent.header}</h4>
+                                    <p className="font-textos text-sm sm:text-lg mb-4 italic">{selectedCard.popupContent.intro}</p>
 
+                                    {/* <h5 className="font-semibold text-lg sm:text-base">{selectedCard.popupContent.question}:</h5> */}
                                     <div
                                         className="font-textos text-sm sm:text-base"
                                         dangerouslySetInnerHTML={{ __html: selectedCard.popupContent.description }}
