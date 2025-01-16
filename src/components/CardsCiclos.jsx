@@ -117,7 +117,7 @@ const CardCiclos = () => {
                         }`}
                 >
                     <div
-                        className={`md:p-0 shadow-lg w-full h-[90vh] lg:h-auto overflow-auto max-w-xs sm:max-w-[44rem] md:max-w-[4xl] lg:max-w-4xl xl:max-w-6xl relative transform transition-transform duration-300 ${isVisible && !isExiting ? 'scale-100 opacity-100' : 'scale-90 opacity-0'
+                        className={`md:p-0 shadow-lg w-full h-[90vh] lg:h-[642px] overflow-auto lg:overflow-hidden max-w-xs sm:max-w-[44rem] md:max-w-[4xl] lg:max-w-4xl xl:max-w-6xl relative transform transition-transform duration-300 ${isVisible && !isExiting ? 'scale-100 opacity-100' : 'scale-90 opacity-0'
                             }`}
                         style={{ backgroundColor: selectedCard.bgColor }}
                     >
