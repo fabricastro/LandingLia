@@ -143,7 +143,7 @@ const CardCiclos = () => {
 
                                 <div style={{ color: selectedCard.textColor }}>
                                     <h4 className="font-normal text-lg sm:text-xl tracking-widest mb-4">{selectedCard.popupContent.header}</h4>
-                                    <p className="font-textos text-sm sm:text-xl mb-4 italic leading-[1.25]">{selectedCard.popupContent.intro}</p>
+                                    <p className="font-textos text-sm sm:text-[22px] mb-4 italic leading-[1.25]">{selectedCard.popupContent.intro}</p>
 
                                     {/* <h5 className="font-semibold text-lg sm:text-base">{selectedCard.popupContent.question}:</h5> */}
                                     <div
@@ -151,11 +151,11 @@ const CardCiclos = () => {
                                         dangerouslySetInnerHTML={{ __html: selectedCard.popupContent.description }}
                                     />
 
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 font-textos">
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-4 font-textos">
                                         {selectedCard.popupContent.items.map((item, index) => (
                                             <div
                                                 key={index}
-                                                className="flex gap-4 pl-4"
+                                                className="flex gap-4"
                                             >
                                                 <h4 className="text-lg sm:text-[38px] font-normal" style={{ color: selectedCard.textColor }}>
                                                     {item.number}
