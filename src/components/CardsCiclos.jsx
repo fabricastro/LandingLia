@@ -142,12 +142,12 @@ const CardCiclos = () => {
                                 </button>
 
                                 <div style={{ color: selectedCard.textColor }}>
-                                    <h4 className="font-semibold text-lg sm:text-xl tracking-widest">{selectedCard.popupContent.header}</h4>
-                                    <p className="font-textos text-sm sm:text-lg mb-4 italic">{selectedCard.popupContent.intro}</p>
+                                    <h4 className="font-semibold text-lg sm:text-xl tracking-widest mb-4">{selectedCard.popupContent.header}</h4>
+                                    <p className="font-textos text-sm sm:text-xl mb-4 italic">{selectedCard.popupContent.intro}</p>
 
                                     {/* <h5 className="font-semibold text-lg sm:text-base">{selectedCard.popupContent.question}:</h5> */}
                                     <div
-                                        className="font-textos text-sm sm:text-base"
+                                        className="font-textos text-sm sm:text-base pb-4"
                                         dangerouslySetInnerHTML={{ __html: selectedCard.popupContent.description }}
                                     />
 
@@ -157,15 +157,15 @@ const CardCiclos = () => {
                                                 key={index}
                                                 className="flex gap-4 pl-4"
                                             >
-                                                <h4 className="text-lg sm:text-[28px] font-bold" style={{ color: selectedCard.textColor }}>
+                                                <h4 className="text-lg sm:text-[38px] font-normal" style={{ color: selectedCard.textColor }}>
                                                     {item.number}
                                                 </h4>
                                                 <div
-                                                    className="border-l-2 pl-4 flex-1"
+                                                    className="border-l pl-4 flex-1"
                                                     style={{ borderColor: selectedCard.textColor }}
                                                 >
                                                     <p className="font-textos text-sm sm:text-base">
-                                                        <strong>{item.title}</strong> <br /> {item.content}
+                                                        <strong>{item.title}</strong> {item.content}
                                                     </p>
                                                 </div>
                                             </div>
