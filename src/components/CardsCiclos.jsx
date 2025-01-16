@@ -164,8 +164,9 @@ const CardCiclos = () => {
                                                     className="border-l pl-4 flex-1"
                                                     style={{ borderColor: selectedCard.textColor }}
                                                 >
-                                                    <p className="font-textos text-sm sm:text-base sm:leading-[1.25] ">
-                                                        <strong>{item.title}</strong> {item.content}
+                                                    <p className="font-textos text-sm sm:text-base sm:leading-[1.25]">
+                                                        <strong>{item.title}</strong>{" "}
+                                                        <span dangerouslySetInnerHTML={{ __html: item.content }} />
                                                     </p>
                                                 </div>
                                             </div>
