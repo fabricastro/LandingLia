@@ -142,8 +142,8 @@ const CardCiclos = () => {
                                 </button>
 
                                 <div style={{ color: selectedCard.textColor }}>
-                                    <h4 className="font-semibold text-lg sm:text-xl tracking-widest mb-4">{selectedCard.popupContent.header}</h4>
-                                    <p className="font-textos text-sm sm:text-xl mb-4 italic">{selectedCard.popupContent.intro}</p>
+                                    <h4 className="font-normal text-lg sm:text-xl tracking-widest mb-4">{selectedCard.popupContent.header}</h4>
+                                    <p className="font-textos text-sm sm:text-xl mb-4 italic leading-[1.25]">{selectedCard.popupContent.intro}</p>
 
                                     {/* <h5 className="font-semibold text-lg sm:text-base">{selectedCard.popupContent.question}:</h5> */}
                                     <div
@@ -164,7 +164,7 @@ const CardCiclos = () => {
                                                     className="border-l pl-4 flex-1"
                                                     style={{ borderColor: selectedCard.textColor }}
                                                 >
-                                                    <p className="font-textos text-sm sm:text-base">
+                                                    <p className="font-textos text-sm sm:text-base sm:leading-[1.25] ">
                                                         <strong>{item.title}</strong> {item.content}
                                                     </p>
                                                 </div>
