@@ -54,7 +54,7 @@ const CardCiclos = () => {
             {groupedCards.map((group, groupIndex) => (
                 <div key={groupIndex} className="w-full px-[25px]">
                     {/* Título para el grupo */}
-                    <h2 className="text-3xl text-center lg:text-[48px] tracking-widest font-medium text-secondary-default mt-48 mb-14">{titles[groupIndex]}</h2>
+                    <h2 className="text-3xl text-center lg:text-[48px] tracking-widest font-bold text-secondary-default mt-32 mb-32">{titles[groupIndex]}</h2>
                     {/* Tarjetas del grupo */}
                     <div
                         className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl transition-opacity duration-300 ${isAnimating ? 'opacity-0 scale-90' : 'opacity-100 scale-100'}`}
@@ -91,10 +91,10 @@ const CardCiclos = () => {
             ))}
 
             {/* Botones "Ver más" y "Ver menos" */}
-            <div className="mt-6 flex gap-4">
+            <div className="mt-20 flex gap-4">
                 {visibleCards < cardData.length && (
                     <button
-                        className="py-2 text-primary-default px-4 text-base font-normal uppercase underline text-[20px]"
+                        className="py-2 text-primary-default px-4 text-xl font-normal uppercase underline"
                         style={{ textUnderlineOffset: '6px' }}
                         onClick={loadMoreCards}>
                         Ver todos los ciclos
@@ -102,7 +102,7 @@ const CardCiclos = () => {
                 )}
                 {visibleCards > 3 && (
                     <button
-                        className="py-2 px-4 text-primary-default text-base font-normal uppercase underline text-[20px]"
+                        className="py-2 px-4 text-primary-default text-xl font-normal uppercase underline text-[20px]"
                         style={{ textUnderlineOffset: '6px' }}
                         onClick={showLessCards}>
                         Ver menos
