@@ -3,42 +3,44 @@ import profileImage from "../assets/images/HOLASOYLIA.webp";
 import reina from "../assets/images/reina.svg";
 ---
 
-<section class="py-16 md:py-24 px-4 lg:pb-[300px] lg:px-16 relative" id="quiensoy">
+<section class="py-16 md:py-24 lg:pb-[300px] relative" id="quiensoy">
     <div
-        class="max-w-[85rem] mx-auto flex flex-col xl:flex-row items-center gap-12"
+        class="mx-auto flex flex-col xl:flex-row items-center justify-between gap-12"
     >
         <!-- Texto -->
-        <div class="xl:w-1/2 lg:mt-6 xl:mt-40 text-center xl:text-center items-center justify-center max-w-[380px]">
+        <div class="lg:w-1/2 px-10 md:px-44 lg:px-0 text-center xl:text-center items-center justify-center">
+            <div class="w-full lg:max-w-[550px] flex flex-col items-center justify-center mx-auto">
             <div class="relative">
                 <img
                     src={reina.src}
-                    class=" h-[150px] sm:h-[180px] md:h-[200px] xl:h-[164px] absolute top-[-50px] md:top-[-70px] md:left-28 lg:left-60 lg:-top-24 xl:top-[-80px] xl:-left-4 z-0 opacity-[25%]"
+                    class=" h-[100px] sm:h-[120px] md:h-[120px] xl:h-[164px] absolute top-[-40px] sm:top-[-50px] -left-5 sm:-left-10 md:top-[-50px] md:-left-10 lg:-left-10 lg:-top-24 xl:top-[-80px] xl:-left-7 z-0 opacity-[25%]"
                     alt="Imagen de fondo"
                 />
                 <h2
-                    class="z-10 text-3xl text-center lg:text-[44px] tracking-[0.12em] font-bold text-primary-default mb-4 font-sathu relative"
+                    class="z-10 text-3xl text-center lg:text-[54px] tracking-[0.12em] font-bold text-primary-default mb-4 font-sathu relative"
                 >
                     HOLA, SOY LÍA
                 </h2>
             </div>
             <p
-                class="relative text-[16px] md:text-[22px] text-center text-primary-default leading-[1.25] font-textos mt-20 md:mt-24 w-full"
+                class="relative text-[16px] md:text-[24px] lg:text-[32px] text-center text-primary-default leading-[1.25] font-textos mt-20 md:mt-24 w-full"
             >
                 Vamos a compartir vinos buscando variedad
                 de terruños, estilos de elaboración, cepas,
                 añadas y mil temáticas más con un mismo hilo conductor:
             </p>
             <p
-                class="relative text-[16px] md:text-[22px] text-center italic text-[#a98e6b] mb-4 leading-[1.25] font-textos mt-14"
+                class="relative text-[16px] md:text-[24px] lg:text-[32px] text-center italic text-[#a98e6b] mb-4 leading-[1.25] font-textos mt-14"
             >
                 Disfrutar de experiencias creativas y dinámicas usando todos los
                 sentidos de una forma que nunca viviste
                 y no te vas a poder olvidar.
             </p>
         </div>
+        </div>
 
         <!-- Imagen -->
-        <div class="xl:w-1/2 xl:absolute xl:-right-0 xl:top-20 xl:h-[full] items-end justify-center xl:justify-end flex">
+        <div class="lg:w-1/2 xl:-right-0 xl:top-20 xl:h-[full] items-end justify-center xl:justify-end flex">
             <img
                 src={profileImage.src}
                 alt="Imagen de Lía"
