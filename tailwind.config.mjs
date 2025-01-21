@@ -18,7 +18,10 @@ export default {
           oscuro: "#91775C",
           texto: "#A78C6B",
         },
-      }
+      },
+      backgroundImage: {
+        'hero': "url('/home.webp')",
+      },
     },
   },
   plugins: [],

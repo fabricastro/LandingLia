@@ -54,7 +54,7 @@ const CardCiclos = () => {
             {groupedCards.map((group, groupIndex) => (
                 <div key={groupIndex} className="w-full px-[25px]">
                     {/* Título para el grupo */}
-                    <h2 className="text-3xl text-center lg:text-[48px] tracking-widest font-bold text-secondary-default mt-32 mb-32">{titles[groupIndex]}</h2>
+                    <h2 className="text-3xl text-center lg:text-[48px] tracking-widest font-bold text-secondary-default mt-28 mb-28">{titles[groupIndex]}</h2>
                     {/* Tarjetas del grupo */}
                     <div
                         className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl transition-opacity duration-300 ${isAnimating ? 'opacity-0 scale-90' : 'opacity-100 scale-100'}`}
