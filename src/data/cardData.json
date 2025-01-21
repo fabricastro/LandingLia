@@ -124,7 +124,7 @@
         "popupContent": {
             "img": "./ciclos/4D-min.jpg",
             "header": "REBELDE EN LA COPA",
-            "intro": "Dejá atrás lo predecible y permitirte romper los esquemas, descubriendo vinos que no están en los estantes de siempre. ¿Estamos para salir de la caja?",
+            "intro": "Dejá atrás lo predecible y permitite romper los esquemas, descubriendo vinos que no están en los estantes de siempre. ¿Estamos para salir de la caja?",
             "question": "¿Qué vas a llevarte?",
             "description": "<b>Qué vas a llevarte:</b> Una sensación de libertad, de esas que surgen cuando te das permiso para probar lo que nadie se atreve a sugerir. Vamos a tener de todo: PetNat, GSM, naranjos, maceraciones carbónicas, crianzas biológicas, botritizados y mucho más. <b>Vas a irte con la capocha abierta, llena de nuevos conocimientos y un montón de ideas para explorar vinos fuera del molde.</b> Te vas a asombrar con lo que el mundo vitivinícola tiene para ofrecer cuando decidís mover los límites. ",
             "items": [
@@ -278,7 +278,7 @@
             "header": "MUNDO ",
             "intro": "En este viaje caminamos los valles vitivinícolas más famosos del planeta, explorando a fondo la riqueza de sus cepas y estilos de elaboración.",
             "question": "¿Qué vas a llevarte?",
-            "description": "<b>Qué vas a llevarte: La experiencia exclusiva de probar algo que no tenemos al alcance de la mano todos los días, y la capacidad de apreciarlo y disfrutarlo mucho.</b> Conocer la personalidad única de un valle fuera de nuestro país, desde su terroir hasta las historias que le dieron vida a lo que estamos tomando.",
+            "description": "<b>Qué vas a llevarte: La experiencia exclusiva de probar algo que no tenemos al alcance de la mano todos los días, y la capacidad de apreciarlo y disfrutarlo mucho.</b> Conocer la personalidad única de un valle fuera de nuestro país, desde su <em>terroir</em> hasta las historias que le dieron vida a lo que estamos tomando.",
             "items": [
                 {
                     "number": "1",
