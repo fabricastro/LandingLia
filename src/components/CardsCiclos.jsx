@@ -70,7 +70,7 @@ const CardCiclos = () => {
                                         <img src={card.iconSrc} alt='estrella' className='max-h-[30px] mb-6' />
                                         <h3 className="text-[22px] text-center uppercase tracking-widest mb-6">{card.title}</h3>
                                         <div
-                                            className="text-[18px] font-textos text-center mt-2"
+                                            className="text-[18px] font-textos text-center mt-2 px-3"
                                             dangerouslySetInnerHTML={{ __html: card.shortDescription }}
                                         />
                                     </div>
