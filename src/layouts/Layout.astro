@@ -29,6 +29,8 @@ import '@fontsource/alegreya-sans/500-italic.css';
 import '@fontsource/alegreya-sans/700-italic.css';
 import '@fontsource/alegreya-sans/800-italic.css';
 import '@fontsource/alegreya-sans/900-italic.css';
+
+import Analytics from '@vercel/analytics/astro'
 ---
 
 <!doctype html>
@@ -41,6 +43,7 @@ import '@fontsource/alegreya-sans/900-italic.css';
 		<title>Lía De Bárbara | La Sommelière</title>
 	</head>
 	<body>
+		<Analytics/>
 		<slot />
 		<script src="/src/scripts/scroll.js"></script>
 	</body>

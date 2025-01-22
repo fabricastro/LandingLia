@@ -16,6 +16,7 @@
     "@fontsource/twinkle-star": "^5.1.0",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
+    "@vercel/analytics": "^1.4.1",
     "@vimeo/player": "^2.25.0",
     "astro": "^5.1.1",
     "lia-de-barbara": "file:",
